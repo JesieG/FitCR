@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controlador\FileHandler.cs" />
+    <Compile Include="Controlador\IDataHandler.cs" />
+    <Compile Include="Modelo\Clase.cs" />
+    <Compile Include="Modelo\Ejercicio.cs" />
+    <Compile Include="Modelo\Entrenador.cs" />
+    <Compile Include="Modelo\Insignia.cs" />
+    <Compile Include="Modelo\Medicion.cs" />
+    <Compile Include="Modelo\Notificacion.cs" />
+    <Compile Include="Modelo\Persona.cs" />
+    <Compile Include="Modelo\Rutina.cs" />
+    <Compile Include="Modelo\Usuario.cs" />
+    <Compile Include="Modelo\Visita.cs" />
     <Compile Include="Vista\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,9 +88,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controlador\" />
-    <Folder Include="Modelo\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
