@@ -56,5 +56,14 @@ namespace FitCR
             }
             return lista;
         }
+
+        // Convierte el usuario en una linea del CSV.
+        public override string ToString()
+        {
+            var rutinas = "{" + string.Join(";", Rutinas) + "}";
+            return Id + "," + Nombre + "," + NombreUsuario + "," + Contrasena + "," + Edad + "," +
+                   Peso.ToString(CultureInfo.InvariantCulture) + "," +
+                   Estatura.ToString(CultureInfo.InvariantCulture) + "," + rutinas;
+        }
     }
 }

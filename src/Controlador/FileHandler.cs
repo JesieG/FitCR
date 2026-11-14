@@ -4,6 +4,7 @@ using System.IO;
 
 namespace FitCR
 {
+    // Lee y guarda datos usando archivos. Esta es la base que dio el profe.
     public class FileHandler<T> : IDataHandler<T>
     {
         public List<T> LoadData(string filename)
@@ -33,16 +34,25 @@ namespace FitCR
                 return false;
             }
 
+            // Guarda la primera linea (los titulos) para no perderla.
+            var titulos = "";
             if (File.Exists(filename))
             {
-                File.Delete(filename);
+                var lineasActuales = File.ReadAllLines(filename);
+                if (lineasActuales.Length > 0)
+                {
+                    titulos = lineasActuales[0];
+                }
             }
 
+            var lineasNuevas = new List<string>();
+            lineasNuevas.Add(titulos);
             foreach (var element in data)
             {
-                File.AppendAllText(filename, element.ToString() + Environment.NewLine);
+                lineasNuevas.Add(element.ToString());
             }
 
+            File.WriteAllLines(filename, lineasNuevas);
             return true;
         }
     }

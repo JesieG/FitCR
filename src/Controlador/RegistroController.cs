@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace FitCR
+﻿namespace FitCR
 {
     // Registra un nuevo usuario en el sistema.
     public class RegistroController
@@ -20,6 +18,12 @@ namespace FitCR
                 return false;
             }
 
+            // La coma separa los datos en el CSV, por eso no se permite en los textos.
+            if (nombre.Contains(",") || usuario.Contains(",") || contrasena.Contains(","))
+            {
+                return false;
+            }
+
             // Revisa que el nombre de usuario no exista ya.
             foreach (var u in InformationService.Usuarios)
             {
@@ -32,13 +36,13 @@ namespace FitCR
             // Calcula el nuevo id (la cantidad de usuarios que ya hay).
             var nuevoId = InformationService.Usuarios.Count.ToString();
 
-            // Crea el usuario nuevo (sin rutinas al inicio, por eso las llaves vacias).
+            // Crea el usuario nuevo, sin rutinas al inicio.
             var nuevo = new Usuario(nuevoId, nombre, usuario, contrasena, edad, peso, estatura, "{}");
-
-            // Lo agrega a la lista.
             InformationService.Usuarios.Add(nuevo);
 
-            return true;
+            // Guarda la lista completa en el CSV.
+            var guardador = new FileHandler<Usuario>();
+            return guardador.SaveData(Configuracion.RutaUsuarios, InformationService.Usuarios);
         }
     }
 }
