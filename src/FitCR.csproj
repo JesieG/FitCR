@@ -51,6 +51,7 @@
     <Compile Include="Controlador\IDataHandler.cs" />
     <Compile Include="Controlador\InformationService.cs" />
     <Compile Include="Controlador\LoginController.cs" />
+    <Compile Include="Controlador\RegistroController.cs" />
     <Compile Include="Modelo\Clase.cs" />
     <Compile Include="Modelo\Ejercicio.cs" />
     <Compile Include="Modelo\Entrenador.cs" />
@@ -75,6 +76,12 @@
     <Compile Include="Vista\LoginView.Designer.cs">
       <DependentUpon>LoginView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\RegistroView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RegistroView.Designer.cs">
+      <DependentUpon>RegistroView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -86,6 +93,9 @@
     </Compile>
     <EmbeddedResource Include="Vista\LoginView.resx">
       <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RegistroView.resx">
+      <DependentUpon>RegistroView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

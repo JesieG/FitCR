@@ -5,12 +5,13 @@ namespace FitCR
 {
     public partial class LoginView : Form
     {
-        // Guarda el controlador que valida el login.
         public LoginController LoginController { get; set; }
+        public RegistroController RegistroController { get; set; }
 
-        public LoginView(LoginController loginController)
+        public LoginView(LoginController loginController, RegistroController registroController)
         {
             LoginController = loginController;
+            RegistroController = registroController;
             InitializeComponent();
         }
 
@@ -31,14 +32,10 @@ namespace FitCR
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
+            var registroView = new RegistroView(RegistroController);
+            registroView.ShowDialog();
         }
     }
 }
