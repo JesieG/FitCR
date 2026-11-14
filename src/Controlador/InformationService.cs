@@ -17,7 +17,8 @@ namespace FitCR
         public List<Usuario> Usuarios { get; set; }
         public List<Entrenador> Entrenadores { get; set; }
 
-        // Aqui se guarda el usuario que inicio sesion.
+        // Aqui se guarda quien inicio sesion, segun su rol.
         public Usuario UsuarioActual { get; set; }
+        public Entrenador EntrenadorActual { get; set; }
     }
 }

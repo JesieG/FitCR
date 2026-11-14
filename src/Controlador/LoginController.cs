@@ -1,6 +1,6 @@
 ﻿namespace FitCR
 {
-    // Revisa si el usuario y la contrasena son correctos.
+    // Revisa si el usuario y la contrasena son correctos y dice que rol tiene.
     public class LoginController
     {
         public LoginController(InformationService informationService)
@@ -10,26 +10,37 @@
 
         public InformationService InformationService { get; set; }
 
-        public bool Login(string usuario, string contrasena)
+        // Devuelve "usuario", "entrenador" o "" si los datos son incorrectos.
+        public string Login(string usuario, string contrasena)
         {
-            // Si alguno viene vacio, no deja entrar.
             if (string.IsNullOrWhiteSpace(usuario) || string.IsNullOrWhiteSpace(contrasena))
             {
-                return false;
+                return "";
             }
 
-            // Recorre los usuarios y busca uno que coincida.
+            // Primero busca entre los usuarios.
             foreach (var elemento in InformationService.Usuarios)
             {
                 if (elemento.NombreUsuario == usuario && elemento.Contrasena == contrasena)
                 {
-                    // Guarda quien entro y devuelve verdadero.
                     InformationService.UsuarioActual = elemento;
-                    return true;
+                    InformationService.EntrenadorActual = null;
+                    return "usuario";
                 }
             }
 
-            return false;
+            // Si no esta, busca entre los entrenadores.
+            foreach (var elemento in InformationService.Entrenadores)
+            {
+                if (elemento.NombreUsuario == usuario && elemento.Contrasena == contrasena)
+                {
+                    InformationService.EntrenadorActual = elemento;
+                    InformationService.UsuarioActual = null;
+                    return "entrenador";
+                }
+            }
+
+            return "";
         }
     }
 }

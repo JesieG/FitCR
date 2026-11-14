@@ -20,11 +20,15 @@ namespace FitCR
             var usuario = TxtUsuario.Text;
             var contrasena = TxtContrasena.Text;
 
-            var resultado = LoginController.Login(usuario, contrasena);
+            var rol = LoginController.Login(usuario, contrasena);
 
-            if (resultado)
+            if (rol == "usuario")
             {
-                MessageBox.Show("Bienvenido!");
+                MessageBox.Show("Bienvenido usuario!");
+            }
+            else if (rol == "entrenador")
+            {
+                MessageBox.Show("Bienvenido entrenador!");
             }
             else
             {
@@ -32,7 +36,7 @@ namespace FitCR
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnRegistro_Click(object sender, EventArgs e)
         {
             var registroView = new RegistroView(RegistroController);
             registroView.ShowDialog();

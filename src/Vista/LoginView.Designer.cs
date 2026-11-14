@@ -151,7 +151,7 @@
             this.BtnRegistro.TabIndex = 9;
             this.BtnRegistro.Text = "Crear Cuenta";
             this.BtnRegistro.UseVisualStyleBackColor = false;
-            this.BtnRegistro.Click += new System.EventHandler(this.button1_Click);
+            this.BtnRegistro.Click += new System.EventHandler(this.BtnRegistro_Click);
             // 
             // LoginView
             // 
