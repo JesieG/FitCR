@@ -1,0 +1,37 @@
+﻿using FitCR.Controlador;
+
+namespace FitCR.Vista
+{
+    /// <summary>
+    /// Menu que ve el entrenador despues de iniciar sesion.
+    /// </summary>
+    public partial class MenuEntrenadorView : Form
+    {
+        private InformationService InformationService { get; set; }
+
+        /// <summary>
+        /// Crea el menu con el servicio que tiene la informacion de quien entro.
+        /// </summary>
+        public MenuEntrenadorView(InformationService informationService)
+        {
+            InformationService = informationService;
+            InitializeComponent();
+            InicializarMensajes();
+        }
+
+        // Escribe el saludo y el tipo de entrenador de quien inicio sesion.
+        private void InicializarMensajes()
+        {
+            if (InformationService.EntrenadorActual != null)
+            {
+                LblBienvenida.Text = $"Hola, {InformationService.EntrenadorActual.Nombre}!";
+                LblTipo.Text = $"Tipo de entrenador: {InformationService.EntrenadorActual.Tipo}";
+            }
+        }
+
+        private void BtnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+    }
+}

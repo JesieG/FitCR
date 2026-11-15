@@ -112,7 +112,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Calibri", 25.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = Color.Lime;
-            label4.Location = new Point(696, 120);
+            label4.Location = new Point(709, 120);
             label4.Name = "label4";
             label4.Size = new Size(80, 53);
             label4.TabIndex = 6;
