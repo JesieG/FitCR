@@ -41,21 +41,30 @@ namespace FitCR.Vista
                 return;
             }
 
-            // Cada rol tendra su propio menu. Por ahora solo se avisa quien entro.
             if (LoginController.InformationService.PersonaActual?.Rol == Rol.Entrenador)
             {
+                // El menu del entrenador viene despues.
                 MessageBox.Show("Bienvenido entrenador!");
+                return;
             }
-            else
-            {
-                MessageBox.Show("Bienvenido usuario!");
-            }
+
+            AbrirMenuUsuario();
         }
 
         private void BtnRegistro_Click(object sender, EventArgs e)
         {
             var registroView = new RegistroView(RegistroController);
             registroView.ShowDialog();
+        }
+
+        // Abre el menu del usuario. El login se oculta y vuelve cuando cierran el menu.
+        private void AbrirMenuUsuario()
+        {
+            var menu = new MenuUsuarioView(LoginController.InformationService);
+            Hide();
+            menu.ShowDialog();
+            TxtContrasena.Clear();
+            Show();
         }
     }
 }
