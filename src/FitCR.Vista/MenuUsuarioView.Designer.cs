@@ -79,6 +79,7 @@
             BtnPerfil.TabIndex = 15;
             BtnPerfil.Text = "Mi perfil";
             BtnPerfil.UseVisualStyleBackColor = false;
+            BtnPerfil.Click += BtnPerfil_Click;
             // 
             // BtnCerrarSesion
             // 

@@ -30,7 +30,8 @@ namespace FitCR.Vista
 
         private void BtnPerfil_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("El perfil viene en el siguiente paso.");
+            var perfil = new PerfilView(InformationService);
+            perfil.ShowDialog();
         }
 
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
