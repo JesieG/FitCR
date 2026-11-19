@@ -41,14 +41,16 @@ namespace FitCR.Vista
             historialView.ShowDialog();
         }
 
+        private void BtnEstadisticas_Click(object sender, EventArgs e)
+        {
+            var estadisticasController = new EstadisticasController(InformationService);
+            var estadisticasView = new EstadisticasView(estadisticasController);
+            estadisticasView.ShowDialog();
+        }
+
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        // Este metodo vacio lo busca el archivo de diseno.
-        private void label2_Click(object sender, EventArgs e)
-        {
         }
     }
 }

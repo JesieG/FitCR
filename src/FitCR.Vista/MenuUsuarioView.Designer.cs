@@ -32,8 +32,9 @@
             pictureBox1 = new PictureBox();
             LblBienvenida = new Label();
             BtnPerfil = new Button();
-            BtnCerrarSesion = new Button();
             BtnHistorial = new Button();
+            BtnEstadisticas = new Button();
+            BtnCerrarSesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -71,19 +72,6 @@
             BtnPerfil.UseVisualStyleBackColor = false;
             BtnPerfil.Click += BtnPerfil_Click;
             // 
-            // BtnCerrarSesion
-            // 
-            BtnCerrarSesion.BackColor = Color.Lime;
-            BtnCerrarSesion.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCerrarSesion.Location = new Point(483, 431);
-            BtnCerrarSesion.Margin = new Padding(4, 5, 4, 5);
-            BtnCerrarSesion.Name = "BtnCerrarSesion";
-            BtnCerrarSesion.Size = new Size(423, 54);
-            BtnCerrarSesion.TabIndex = 16;
-            BtnCerrarSesion.Text = "Cerrar Sesión";
-            BtnCerrarSesion.UseVisualStyleBackColor = false;
-            BtnCerrarSesion.Click += BtnCerrarSesion_Click;
-            // 
             // BtnHistorial
             // 
             BtnHistorial.BackColor = Color.Lime;
@@ -97,14 +85,41 @@
             BtnHistorial.UseVisualStyleBackColor = false;
             BtnHistorial.Click += BtnHistorial_Click;
             // 
+            // BtnEstadisticas
+            // 
+            BtnEstadisticas.BackColor = Color.Lime;
+            BtnEstadisticas.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnEstadisticas.Location = new Point(483, 431);
+            BtnEstadisticas.Margin = new Padding(4, 5, 4, 5);
+            BtnEstadisticas.Name = "BtnEstadisticas";
+            BtnEstadisticas.Size = new Size(423, 54);
+            BtnEstadisticas.TabIndex = 18;
+            BtnEstadisticas.Text = "Estadisticas";
+            BtnEstadisticas.UseVisualStyleBackColor = false;
+            BtnEstadisticas.Click += BtnEstadisticas_Click;
+            // 
+            // BtnCerrarSesion
+            // 
+            BtnCerrarSesion.BackColor = Color.Lime;
+            BtnCerrarSesion.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnCerrarSesion.Location = new Point(483, 509);
+            BtnCerrarSesion.Margin = new Padding(4, 5, 4, 5);
+            BtnCerrarSesion.Name = "BtnCerrarSesion";
+            BtnCerrarSesion.Size = new Size(423, 54);
+            BtnCerrarSesion.TabIndex = 16;
+            BtnCerrarSesion.Text = "Cerrar Sesión";
+            BtnCerrarSesion.UseVisualStyleBackColor = false;
+            BtnCerrarSesion.Click += BtnCerrarSesion_Click;
+            // 
             // MenuUsuarioView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1388, 741);
-            Controls.Add(BtnHistorial);
             Controls.Add(BtnCerrarSesion);
+            Controls.Add(BtnEstadisticas);
+            Controls.Add(BtnHistorial);
             Controls.Add(BtnPerfil);
             Controls.Add(LblBienvenida);
             Controls.Add(pictureBox1);
@@ -120,7 +135,8 @@
         private PictureBox pictureBox1;
         private Label LblBienvenida;
         private Button BtnPerfil;
-        private Button BtnCerrarSesion;
         private Button BtnHistorial;
+        private Button BtnEstadisticas;
+        private Button BtnCerrarSesion;
     }
 }
