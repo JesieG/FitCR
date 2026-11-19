@@ -1,4 +1,6 @@
-﻿namespace FitCR.Modelo
+﻿using System.Globalization;
+
+namespace FitCR.Modelo
 {
     /// <summary>
     /// Visita de un usuario al gimnasio.
@@ -6,14 +8,24 @@
     public class Visita
     {
         /// <summary>
+        /// Crea una visita a partir de los textos de una linea del CSV.
+        /// </summary>
+        public Visita(string id, string idUsuario, string fecha)
+        {
+            Id = id;
+            IdUsuario = idUsuario;
+            Fecha = DateTime.Parse(fecha, CultureInfo.InvariantCulture);
+        }
+
+        /// <summary>
         /// Identificador de la visita.
         /// </summary>
-        public string Id { get; set; } = string.Empty;
+        public string Id { get; set; }
 
         /// <summary>
         /// Identificador del usuario que visito el gimnasio.
         /// </summary>
-        public string IdUsuario { get; set; } = string.Empty;
+        public string IdUsuario { get; set; }
 
         /// <summary>
         /// Fecha de la visita.

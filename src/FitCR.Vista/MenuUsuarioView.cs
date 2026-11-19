@@ -34,6 +34,13 @@ namespace FitCR.Vista
             perfil.ShowDialog();
         }
 
+        private void BtnHistorial_Click(object sender, EventArgs e)
+        {
+            var historialController = new HistorialController(InformationService);
+            var historialView = new HistorialView(historialController);
+            historialView.ShowDialog();
+        }
+
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
             Close();

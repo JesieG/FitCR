@@ -19,7 +19,18 @@ namespace FitCR.Vista
 
             IDataHandler<Usuario> usuarioHandler = new FileHandler<Usuario>();
             IDataHandler<Entrenador> entrenadorHandler = new FileHandler<Entrenador>();
-            var informationService = new InformationService(usuarioHandler, entrenadorHandler);
+            IDataHandler<Rutina> rutinaHandler = new FileHandler<Rutina>();
+            IDataHandler<Visita> visitaHandler = new FileHandler<Visita>();
+            IDataHandler<Medicion> medicionHandler = new FileHandler<Medicion>();
+            IDataHandler<Clase> claseHandler = new FileHandler<Clase>();
+
+            var informationService = new InformationService(
+                usuarioHandler,
+                entrenadorHandler,
+                rutinaHandler,
+                visitaHandler,
+                medicionHandler,
+                claseHandler);
             var loginController = new LoginController(informationService);
             var registroController = new RegistroController(informationService);
             var loginView = new LoginView(loginController, registroController);

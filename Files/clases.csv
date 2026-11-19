@@ -1,0 +1,41 @@
+id,nombre,tipo,idEntrenador
+0,Yoga Sabado 17:00,yoga,22
+1,Yoga Sabado 09:00,yoga,14
+2,Yoga Miercoles 06:00,yoga,36
+3,Yoga Jueves 19:00,yoga,22
+4,Yoga Lunes 19:00,yoga,10
+5,Yoga Lunes 17:00,yoga,10
+6,Yoga Lunes 06:00,yoga,38
+7,Yoga Martes 19:00,yoga,34
+8,Gimnasio abierto Sabado 06:00,gimnasio abierto,18
+9,Gimnasio abierto Lunes 12:00,gimnasio abierto,24
+10,Gimnasio abierto Miercoles 19:00,gimnasio abierto,38
+11,Gimnasio abierto Lunes 09:00,gimnasio abierto,36
+12,Gimnasio abierto Miercoles 12:00,gimnasio abierto,0
+13,Gimnasio abierto Martes 06:00,gimnasio abierto,10
+14,Gimnasio abierto Viernes 09:00,gimnasio abierto,12
+15,Gimnasio abierto Lunes 19:00,gimnasio abierto,26
+16,Crossfit Miercoles 19:00,crossfit,10
+17,Crossfit Lunes 09:00,crossfit,20
+18,Crossfit Lunes 19:00,crossfit,32
+19,Crossfit Jueves 09:00,crossfit,8
+20,Crossfit Miercoles 12:00,crossfit,16
+21,Crossfit Lunes 17:00,crossfit,14
+22,Crossfit Jueves 17:00,crossfit,36
+23,Crossfit Sabado 06:00,crossfit,20
+24,Zumba Lunes 09:00,zumba,30
+25,Zumba Viernes 06:00,zumba,38
+26,Zumba Sabado 06:00,zumba,6
+27,Zumba Sabado 19:00,zumba,30
+28,Zumba Viernes 17:00,zumba,22
+29,Zumba Viernes 09:00,zumba,26
+30,Zumba Lunes 19:00,zumba,38
+31,Zumba Miercoles 12:00,zumba,36
+32,Spinning Viernes 19:00,spinning,26
+33,Spinning Miercoles 17:00,spinning,6
+34,Spinning Sabado 19:00,spinning,36
+35,Spinning Martes 19:00,spinning,6
+36,Spinning Jueves 06:00,spinning,32
+37,Spinning Miercoles 19:00,spinning,20
+38,Spinning Viernes 12:00,spinning,32
+39,Spinning Sabado 17:00,spinning,32

@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuUsuarioView));
             pictureBox1 = new PictureBox();
-            label1 = new Label();
             LblBienvenida = new Label();
             BtnPerfil = new Button();
             BtnCerrarSesion = new Button();
+            BtnHistorial = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -47,15 +47,6 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(50, 20);
-            label1.TabIndex = 1;
-            label1.Text = "label1";
-            // 
             // LblBienvenida
             // 
             LblBienvenida.AutoSize = true;
@@ -66,7 +57,6 @@
             LblBienvenida.Size = new Size(89, 37);
             LblBienvenida.TabIndex = 2;
             LblBienvenida.Text = "Hola, ";
-            LblBienvenida.Click += label2_Click;
             // 
             // BtnPerfil
             // 
@@ -85,13 +75,27 @@
             // 
             BtnCerrarSesion.BackColor = Color.Lime;
             BtnCerrarSesion.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCerrarSesion.Location = new Point(483, 392);
+            BtnCerrarSesion.Location = new Point(483, 431);
             BtnCerrarSesion.Margin = new Padding(4, 5, 4, 5);
             BtnCerrarSesion.Name = "BtnCerrarSesion";
             BtnCerrarSesion.Size = new Size(423, 54);
             BtnCerrarSesion.TabIndex = 16;
             BtnCerrarSesion.Text = "Cerrar Sesión";
             BtnCerrarSesion.UseVisualStyleBackColor = false;
+            BtnCerrarSesion.Click += BtnCerrarSesion_Click;
+            // 
+            // BtnHistorial
+            // 
+            BtnHistorial.BackColor = Color.Lime;
+            BtnHistorial.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnHistorial.Location = new Point(483, 353);
+            BtnHistorial.Margin = new Padding(4, 5, 4, 5);
+            BtnHistorial.Name = "BtnHistorial";
+            BtnHistorial.Size = new Size(423, 54);
+            BtnHistorial.TabIndex = 17;
+            BtnHistorial.Text = "Historial";
+            BtnHistorial.UseVisualStyleBackColor = false;
+            BtnHistorial.Click += BtnHistorial_Click;
             // 
             // MenuUsuarioView
             // 
@@ -99,10 +103,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1388, 741);
+            Controls.Add(BtnHistorial);
             Controls.Add(BtnCerrarSesion);
             Controls.Add(BtnPerfil);
             Controls.Add(LblBienvenida);
-            Controls.Add(label1);
             Controls.Add(pictureBox1);
             Name = "MenuUsuarioView";
             Text = "MenuUsuarioView";
@@ -114,9 +118,9 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Label label1;
         private Label LblBienvenida;
         private Button BtnPerfil;
         private Button BtnCerrarSesion;
+        private Button BtnHistorial;
     }
 }
