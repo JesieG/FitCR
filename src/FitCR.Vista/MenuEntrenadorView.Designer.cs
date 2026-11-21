@@ -32,6 +32,7 @@
             pictureBox1 = new PictureBox();
             LblBienvenida = new Label();
             LblTipo = new Label();
+            BtnRutinas = new Button();
             BtnCerrarSesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -68,6 +69,19 @@
             LblTipo.TabIndex = 11;
             LblTipo.Text = "Tipo de entrenador:";
             // 
+            // BtnRutinas
+            // 
+            BtnRutinas.BackColor = Color.Lime;
+            BtnRutinas.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnRutinas.Location = new Point(468, 410);
+            BtnRutinas.Margin = new Padding(4, 5, 4, 5);
+            BtnRutinas.Name = "BtnRutinas";
+            BtnRutinas.Size = new Size(423, 54);
+            BtnRutinas.TabIndex = 17;
+            BtnRutinas.Text = "Rutinas";
+            BtnRutinas.UseVisualStyleBackColor = false;
+            BtnRutinas.Click += BtnRutinas_Click;
+            // 
             // BtnCerrarSesion
             // 
             BtnCerrarSesion.BackColor = Color.Lime;
@@ -79,6 +93,7 @@
             BtnCerrarSesion.TabIndex = 16;
             BtnCerrarSesion.Text = "Cerrar Sesión";
             BtnCerrarSesion.UseVisualStyleBackColor = false;
+            BtnCerrarSesion.Click += BtnCerrarSesion_Click;
             // 
             // MenuEntrenadorView
             // 
@@ -87,6 +102,7 @@
             BackColor = Color.Black;
             ClientSize = new Size(1356, 750);
             Controls.Add(BtnCerrarSesion);
+            Controls.Add(BtnRutinas);
             Controls.Add(LblTipo);
             Controls.Add(LblBienvenida);
             Controls.Add(pictureBox1);
@@ -102,6 +118,7 @@
         private PictureBox pictureBox1;
         private Label LblBienvenida;
         private Label LblTipo;
+        private Button BtnRutinas;
         private Button BtnCerrarSesion;
     }
 }

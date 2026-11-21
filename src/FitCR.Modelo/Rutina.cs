@@ -37,5 +37,13 @@ namespace FitCR.Modelo
         /// Fecha hasta la que la rutina esta vigente.
         /// </summary>
         public DateTime FechaVigencia { get; set; }
+
+        /// <summary>
+        /// Convierte la rutina en una linea del CSV.
+        /// </summary>
+        public override string ToString()
+        {
+            return Id + "," + Nombre + "," + IdUsuario + "," + FechaVigencia.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+        }
     }
 }

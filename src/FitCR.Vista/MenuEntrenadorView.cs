@@ -29,6 +29,13 @@ namespace FitCR.Vista
             }
         }
 
+        private void BtnRutinas_Click(object sender, EventArgs e)
+        {
+            var rutinasController = new RutinasController(InformationService);
+            var rutinasView = new RutinasView(rutinasController);
+            rutinasView.ShowDialog();
+        }
+
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
             Close();
