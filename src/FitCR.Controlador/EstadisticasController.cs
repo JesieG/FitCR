@@ -53,6 +53,24 @@ namespace FitCR.Controlador
             return TomarPrimeros(todos);
         }
 
+        /// <summary>
+        /// Cuenta las visitas de un usuario que caen dentro del rango, sin tomar en cuenta la hora.
+        /// </summary>
+        public int ContarVisitas(Usuario usuario, DateTime desde, DateTime hasta)
+        {
+            var cantidad = 0;
+
+            foreach (var visita in InformationService.Visitas)
+            {
+                if (visita.IdUsuario == usuario.Id && visita.Fecha.Date >= desde.Date && visita.Fecha.Date <= hasta.Date)
+                {
+                    cantidad++;
+                }
+            }
+
+            return cantidad;
+        }
+
         // Arma la lista de todos los usuarios con su cantidad de visitas, de mayor a menor.
         private List<VisitasPorUsuario> ContarVisitasPorUsuario(DateTime desde, DateTime hasta)
         {
@@ -66,22 +84,6 @@ namespace FitCR.Controlador
 
             resultado.Sort(new OrdenPorVisitas());
             return resultado;
-        }
-
-        // Cuenta las visitas de un usuario que caen dentro del rango, sin tomar en cuenta la hora.
-        private int ContarVisitas(Usuario usuario, DateTime desde, DateTime hasta)
-        {
-            var cantidad = 0;
-
-            foreach (var visita in InformationService.Visitas)
-            {
-                if (visita.IdUsuario == usuario.Id && visita.Fecha.Date >= desde.Date && visita.Fecha.Date <= hasta.Date)
-                {
-                    cantidad++;
-                }
-            }
-
-            return cantidad;
         }
 
         // Se queda con los primeros 10 de la lista.

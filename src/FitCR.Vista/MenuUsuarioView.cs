@@ -48,6 +48,14 @@ namespace FitCR.Vista
             estadisticasView.ShowDialog();
         }
 
+        private void BtnInsignias_Click(object sender, EventArgs e)
+        {
+            var estadisticasController = new EstadisticasController(InformationService);
+            var insigniasController = new InsigniasController(InformationService, estadisticasController);
+            var insigniasView = new InsigniasView(insigniasController);
+            insigniasView.ShowDialog();
+        }
+
         private void BtnClases_Click(object sender, EventArgs e)
         {
             var clasesController = new ClasesController(InformationService);

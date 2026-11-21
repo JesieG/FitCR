@@ -34,6 +34,7 @@
             BtnPerfil = new Button();
             BtnHistorial = new Button();
             BtnEstadisticas = new Button();
+            BtnInsignias = new Button();
             BtnClases = new Button();
             BtnCerrarSesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -99,11 +100,24 @@
             BtnEstadisticas.UseVisualStyleBackColor = false;
             BtnEstadisticas.Click += BtnEstadisticas_Click;
             // 
+            // BtnInsignias
+            // 
+            BtnInsignias.BackColor = Color.Lime;
+            BtnInsignias.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnInsignias.Location = new Point(483, 509);
+            BtnInsignias.Margin = new Padding(4, 5, 4, 5);
+            BtnInsignias.Name = "BtnInsignias";
+            BtnInsignias.Size = new Size(423, 54);
+            BtnInsignias.TabIndex = 20;
+            BtnInsignias.Text = "Insignias";
+            BtnInsignias.UseVisualStyleBackColor = false;
+            BtnInsignias.Click += BtnInsignias_Click;
+            // 
             // BtnClases
             // 
             BtnClases.BackColor = Color.Lime;
             BtnClases.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnClases.Location = new Point(483, 509);
+            BtnClases.Location = new Point(483, 587);
             BtnClases.Margin = new Padding(4, 5, 4, 5);
             BtnClases.Name = "BtnClases";
             BtnClases.Size = new Size(423, 54);
@@ -116,7 +130,7 @@
             // 
             BtnCerrarSesion.BackColor = Color.Lime;
             BtnCerrarSesion.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCerrarSesion.Location = new Point(483, 587);
+            BtnCerrarSesion.Location = new Point(483, 665);
             BtnCerrarSesion.Margin = new Padding(4, 5, 4, 5);
             BtnCerrarSesion.Name = "BtnCerrarSesion";
             BtnCerrarSesion.Size = new Size(423, 54);
@@ -133,6 +147,7 @@
             ClientSize = new Size(1388, 741);
             Controls.Add(BtnCerrarSesion);
             Controls.Add(BtnClases);
+            Controls.Add(BtnInsignias);
             Controls.Add(BtnEstadisticas);
             Controls.Add(BtnHistorial);
             Controls.Add(BtnPerfil);
@@ -152,6 +167,7 @@
         private Button BtnPerfil;
         private Button BtnHistorial;
         private Button BtnEstadisticas;
+        private Button BtnInsignias;
         private Button BtnClases;
         private Button BtnCerrarSesion;
     }
