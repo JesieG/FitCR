@@ -17,13 +17,15 @@ namespace FitCR.Controlador
         /// <param name="visitaDataHandler">Lector de datos de visitas.</param>
         /// <param name="medicionDataHandler">Lector de datos de mediciones.</param>
         /// <param name="claseDataHandler">Lector de datos de clases.</param>
+        /// <param name="metaDataHandler">Lector de datos de metas.</param>
         public InformationService(
             IDataHandler<Usuario> usuarioDataHandler,
             IDataHandler<Entrenador> entrenadorDataHandler,
             IDataHandler<Rutina> rutinaDataHandler,
             IDataHandler<Visita> visitaDataHandler,
             IDataHandler<Medicion> medicionDataHandler,
-            IDataHandler<Clase> claseDataHandler)
+            IDataHandler<Clase> claseDataHandler,
+            IDataHandler<Meta> metaDataHandler)
         {
             UsuarioDataHandler = usuarioDataHandler;
             EntrenadorDataHandler = entrenadorDataHandler;
@@ -31,6 +33,7 @@ namespace FitCR.Controlador
             VisitaDataHandler = visitaDataHandler;
             MedicionDataHandler = medicionDataHandler;
             ClaseDataHandler = claseDataHandler;
+            MetaDataHandler = metaDataHandler;
 
             Usuarios = UsuarioDataHandler.LoadData(Configuracion.RutaUsuarios);
             Entrenadores = EntrenadorDataHandler.LoadData(Configuracion.RutaEntrenadores);
@@ -38,6 +41,7 @@ namespace FitCR.Controlador
             Visitas = VisitaDataHandler.LoadData(Configuracion.RutaVisitas);
             Mediciones = MedicionDataHandler.LoadData(Configuracion.RutaMediciones);
             Clases = ClaseDataHandler.LoadData(Configuracion.RutaClases);
+            Metas = MetaDataHandler.LoadData(Configuracion.RutaMetas);
         }
 
         /// <summary>
@@ -71,6 +75,11 @@ namespace FitCR.Controlador
         public IDataHandler<Clase> ClaseDataHandler { get; set; }
 
         /// <summary>
+        /// Lector y guardador de datos de metas.
+        /// </summary>
+        public IDataHandler<Meta> MetaDataHandler { get; set; }
+
+        /// <summary>
         /// Usuarios cargados del archivo.
         /// </summary>
         public List<Usuario> Usuarios { get; set; }
@@ -99,6 +108,11 @@ namespace FitCR.Controlador
         /// Clases del gimnasio cargadas del archivo.
         /// </summary>
         public List<Clase> Clases { get; set; }
+
+        /// <summary>
+        /// Metas de los usuarios cargadas del archivo.
+        /// </summary>
+        public List<Meta> Metas { get; set; }
 
         /// <summary>
         /// Persona que inicio sesion. Si no hay nadie, es null.

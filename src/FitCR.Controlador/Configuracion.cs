@@ -35,6 +35,11 @@
         /// </summary>
         public static string RutaClases => Path.Combine(CarpetaFiles, "clases.csv");
 
+        /// <summary>
+        /// Ruta del archivo de metas.
+        /// </summary>
+        public static string RutaMetas => Path.Combine(CarpetaFiles, "metas.csv");
+
         // Busca la carpeta Files subiendo desde donde corre el programa.
         private static string CarpetaFiles
         {

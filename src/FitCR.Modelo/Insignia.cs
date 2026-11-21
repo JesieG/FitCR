@@ -6,14 +6,24 @@
     public class Insignia
     {
         /// <summary>
-        /// Identificador de la insignia.
+        /// Crea una insignia con su nombre, su descripcion y su tipo.
         /// </summary>
-        public string Id { get; set; } = string.Empty;
+        public Insignia(string nombre, string descripcion, bool esDeLaVerguenza)
+        {
+            Nombre = nombre;
+            Descripcion = descripcion;
+            EsDeLaVerguenza = esDeLaVerguenza;
+        }
 
         /// <summary>
         /// Nombre de la insignia.
         /// </summary>
-        public string Nombre { get; set; } = string.Empty;
+        public string Nombre { get; set; }
+
+        /// <summary>
+        /// Por que se obtuvo la insignia.
+        /// </summary>
+        public string Descripcion { get; set; }
 
         /// <summary>
         /// Indica si es una insignia de la verguenza.

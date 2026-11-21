@@ -72,7 +72,7 @@
             LblHasta.ForeColor = Color.White;
             LblHasta.Location = new Point(480, 100);
             LblHasta.Name = "LblHasta";
-            LblHasta.Size = new Size(65, 24);
+            LblHasta.Size = new Size(64, 24);
             LblHasta.TabIndex = 2;
             LblHasta.Text = "Hasta:";
             // 
@@ -96,7 +96,7 @@
             // 
             BtnGenerar.BackColor = Color.Lime;
             BtnGenerar.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnGenerar.Location = new Point(745, 88);
+            BtnGenerar.Location = new Point(752, 89);
             BtnGenerar.Name = "BtnGenerar";
             BtnGenerar.Size = new Size(140, 40);
             BtnGenerar.TabIndex = 5;
@@ -122,7 +122,7 @@
             LblTopAusentes.ForeColor = Color.Lime;
             LblTopAusentes.Location = new Point(530, 160);
             LblTopAusentes.Name = "LblTopAusentes";
-            LblTopAusentes.Size = new Size(166, 24);
+            LblTopAusentes.Size = new Size(171, 24);
             LblTopAusentes.TabIndex = 7;
             LblTopAusentes.Text = "Top 10 de ausentes";
             // 
@@ -130,10 +130,11 @@
             // 
             GrdTopVisitantes.AllowUserToAddRows = false;
             GrdTopVisitantes.AllowUserToDeleteRows = false;
-            GrdTopVisitantes.ReadOnly = true;
-            GrdTopVisitantes.RowHeadersWidth = 51;
+            GrdTopVisitantes.ColumnHeadersHeight = 29;
             GrdTopVisitantes.Location = new Point(80, 195);
             GrdTopVisitantes.Name = "GrdTopVisitantes";
+            GrdTopVisitantes.ReadOnly = true;
+            GrdTopVisitantes.RowHeadersWidth = 51;
             GrdTopVisitantes.Size = new Size(390, 340);
             GrdTopVisitantes.TabIndex = 8;
             // 
@@ -141,10 +142,11 @@
             // 
             GrdTopAusentes.AllowUserToAddRows = false;
             GrdTopAusentes.AllowUserToDeleteRows = false;
-            GrdTopAusentes.ReadOnly = true;
-            GrdTopAusentes.RowHeadersWidth = 51;
+            GrdTopAusentes.ColumnHeadersHeight = 29;
             GrdTopAusentes.Location = new Point(530, 195);
             GrdTopAusentes.Name = "GrdTopAusentes";
+            GrdTopAusentes.ReadOnly = true;
+            GrdTopAusentes.RowHeadersWidth = 51;
             GrdTopAusentes.Size = new Size(390, 340);
             GrdTopAusentes.TabIndex = 9;
             // 

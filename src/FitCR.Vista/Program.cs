@@ -23,6 +23,7 @@ namespace FitCR.Vista
             IDataHandler<Visita> visitaHandler = new FileHandler<Visita>();
             IDataHandler<Medicion> medicionHandler = new FileHandler<Medicion>();
             IDataHandler<Clase> claseHandler = new FileHandler<Clase>();
+            IDataHandler<Meta> metaHandler = new FileHandler<Meta>();
 
             var informationService = new InformationService(
                 usuarioHandler,
@@ -30,7 +31,8 @@ namespace FitCR.Vista
                 rutinaHandler,
                 visitaHandler,
                 medicionHandler,
-                claseHandler);
+                claseHandler,
+                metaHandler);
             var loginController = new LoginController(informationService);
             var registroController = new RegistroController(informationService);
             var loginView = new LoginView(loginController, registroController);
