@@ -33,6 +33,7 @@
             LblBienvenida = new Label();
             LblTipo = new Label();
             BtnRutinas = new Button();
+            BtnMediciones = new Button();
             BtnCerrarSesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -82,11 +83,24 @@
             BtnRutinas.UseVisualStyleBackColor = false;
             BtnRutinas.Click += BtnRutinas_Click;
             // 
+            // BtnMediciones
+            // 
+            BtnMediciones.BackColor = Color.Lime;
+            BtnMediciones.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnMediciones.Location = new Point(468, 488);
+            BtnMediciones.Margin = new Padding(4, 5, 4, 5);
+            BtnMediciones.Name = "BtnMediciones";
+            BtnMediciones.Size = new Size(423, 54);
+            BtnMediciones.TabIndex = 18;
+            BtnMediciones.Text = "Mediciones";
+            BtnMediciones.UseVisualStyleBackColor = false;
+            BtnMediciones.Click += BtnMediciones_Click;
+            // 
             // BtnCerrarSesion
             // 
             BtnCerrarSesion.BackColor = Color.Lime;
             BtnCerrarSesion.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCerrarSesion.Location = new Point(468, 492);
+            BtnCerrarSesion.Location = new Point(468, 566);
             BtnCerrarSesion.Margin = new Padding(4, 5, 4, 5);
             BtnCerrarSesion.Name = "BtnCerrarSesion";
             BtnCerrarSesion.Size = new Size(423, 54);
@@ -102,6 +116,7 @@
             BackColor = Color.Black;
             ClientSize = new Size(1356, 750);
             Controls.Add(BtnCerrarSesion);
+            Controls.Add(BtnMediciones);
             Controls.Add(BtnRutinas);
             Controls.Add(LblTipo);
             Controls.Add(LblBienvenida);
@@ -119,6 +134,7 @@
         private Label LblBienvenida;
         private Label LblTipo;
         private Button BtnRutinas;
+        private Button BtnMediciones;
         private Button BtnCerrarSesion;
     }
 }

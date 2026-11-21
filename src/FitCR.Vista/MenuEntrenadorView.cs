@@ -36,6 +36,14 @@ namespace FitCR.Vista
             rutinasView.ShowDialog();
         }
 
+        private void BtnMediciones_Click(object sender, EventArgs e)
+        {
+            var medicionesController = new MedicionesController(InformationService);
+            var historialController = new HistorialController(InformationService);
+            var medicionesView = new MedicionesView(medicionesController, historialController);
+            medicionesView.ShowDialog();
+        }
+
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
             Close();

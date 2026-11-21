@@ -49,5 +49,16 @@ namespace FitCR.Modelo
         /// Porcentaje de musculatura.
         /// </summary>
         public double Musculatura { get; set; }
+
+        /// <summary>
+        /// Convierte la medicion en una linea del CSV.
+        /// </summary>
+        public override string ToString()
+        {
+            return Id + "," + IdUsuario + "," + Fecha.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) + "," +
+                   Peso.ToString(CultureInfo.InvariantCulture) + "," +
+                   Grasa.ToString(CultureInfo.InvariantCulture) + "," +
+                   Musculatura.ToString(CultureInfo.InvariantCulture);
+        }
     }
 }
