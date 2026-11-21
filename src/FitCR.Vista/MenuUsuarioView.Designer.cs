@@ -34,6 +34,7 @@
             BtnPerfil = new Button();
             BtnHistorial = new Button();
             BtnEstadisticas = new Button();
+            BtnClases = new Button();
             BtnCerrarSesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -98,11 +99,24 @@
             BtnEstadisticas.UseVisualStyleBackColor = false;
             BtnEstadisticas.Click += BtnEstadisticas_Click;
             // 
+            // BtnClases
+            // 
+            BtnClases.BackColor = Color.Lime;
+            BtnClases.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnClases.Location = new Point(483, 509);
+            BtnClases.Margin = new Padding(4, 5, 4, 5);
+            BtnClases.Name = "BtnClases";
+            BtnClases.Size = new Size(423, 54);
+            BtnClases.TabIndex = 19;
+            BtnClases.Text = "Clases";
+            BtnClases.UseVisualStyleBackColor = false;
+            BtnClases.Click += BtnClases_Click;
+            // 
             // BtnCerrarSesion
             // 
             BtnCerrarSesion.BackColor = Color.Lime;
             BtnCerrarSesion.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCerrarSesion.Location = new Point(483, 509);
+            BtnCerrarSesion.Location = new Point(483, 587);
             BtnCerrarSesion.Margin = new Padding(4, 5, 4, 5);
             BtnCerrarSesion.Name = "BtnCerrarSesion";
             BtnCerrarSesion.Size = new Size(423, 54);
@@ -118,6 +132,7 @@
             BackColor = Color.Black;
             ClientSize = new Size(1388, 741);
             Controls.Add(BtnCerrarSesion);
+            Controls.Add(BtnClases);
             Controls.Add(BtnEstadisticas);
             Controls.Add(BtnHistorial);
             Controls.Add(BtnPerfil);
@@ -137,6 +152,7 @@
         private Button BtnPerfil;
         private Button BtnHistorial;
         private Button BtnEstadisticas;
+        private Button BtnClases;
         private Button BtnCerrarSesion;
     }
 }

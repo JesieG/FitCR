@@ -48,6 +48,13 @@ namespace FitCR.Vista
             estadisticasView.ShowDialog();
         }
 
+        private void BtnClases_Click(object sender, EventArgs e)
+        {
+            var clasesController = new ClasesController(InformationService);
+            var clasesView = new ClasesView(clasesController);
+            clasesView.ShowDialog();
+        }
+
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
             Close();
