@@ -40,6 +40,11 @@
         /// </summary>
         public static string RutaMetas => Path.Combine(CarpetaFiles, "metas.csv");
 
+        /// <summary>
+        /// Ruta del archivo de aumentos de peso.
+        /// </summary>
+        public static string RutaAumentos => Path.Combine(CarpetaFiles, "aumentos.csv");
+
         // Busca la carpeta Files subiendo desde donde corre el programa.
         private static string CarpetaFiles
         {

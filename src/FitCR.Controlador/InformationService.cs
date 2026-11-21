@@ -18,6 +18,7 @@ namespace FitCR.Controlador
         /// <param name="medicionDataHandler">Lector de datos de mediciones.</param>
         /// <param name="claseDataHandler">Lector de datos de clases.</param>
         /// <param name="metaDataHandler">Lector de datos de metas.</param>
+        /// <param name="aumentoDataHandler">Lector de datos de aumentos de peso.</param>
         public InformationService(
             IDataHandler<Usuario> usuarioDataHandler,
             IDataHandler<Entrenador> entrenadorDataHandler,
@@ -25,7 +26,8 @@ namespace FitCR.Controlador
             IDataHandler<Visita> visitaDataHandler,
             IDataHandler<Medicion> medicionDataHandler,
             IDataHandler<Clase> claseDataHandler,
-            IDataHandler<Meta> metaDataHandler)
+            IDataHandler<Meta> metaDataHandler,
+            IDataHandler<AumentoPeso> aumentoDataHandler)
         {
             UsuarioDataHandler = usuarioDataHandler;
             EntrenadorDataHandler = entrenadorDataHandler;
@@ -34,6 +36,7 @@ namespace FitCR.Controlador
             MedicionDataHandler = medicionDataHandler;
             ClaseDataHandler = claseDataHandler;
             MetaDataHandler = metaDataHandler;
+            AumentoDataHandler = aumentoDataHandler;
 
             Usuarios = UsuarioDataHandler.LoadData(Configuracion.RutaUsuarios);
             Entrenadores = EntrenadorDataHandler.LoadData(Configuracion.RutaEntrenadores);
@@ -42,6 +45,7 @@ namespace FitCR.Controlador
             Mediciones = MedicionDataHandler.LoadData(Configuracion.RutaMediciones);
             Clases = ClaseDataHandler.LoadData(Configuracion.RutaClases);
             Metas = MetaDataHandler.LoadData(Configuracion.RutaMetas);
+            Aumentos = AumentoDataHandler.LoadData(Configuracion.RutaAumentos);
         }
 
         /// <summary>
@@ -80,6 +84,11 @@ namespace FitCR.Controlador
         public IDataHandler<Meta> MetaDataHandler { get; set; }
 
         /// <summary>
+        /// Lector y guardador de datos de aumentos de peso.
+        /// </summary>
+        public IDataHandler<AumentoPeso> AumentoDataHandler { get; set; }
+
+        /// <summary>
         /// Usuarios cargados del archivo.
         /// </summary>
         public List<Usuario> Usuarios { get; set; }
@@ -113,6 +122,11 @@ namespace FitCR.Controlador
         /// Metas de los usuarios cargadas del archivo.
         /// </summary>
         public List<Meta> Metas { get; set; }
+
+        /// <summary>
+        /// Pesos levantados en los ejercicios, cargados del archivo.
+        /// </summary>
+        public List<AumentoPeso> Aumentos { get; set; }
 
         /// <summary>
         /// Persona que inicio sesion. Si no hay nadie, es null.

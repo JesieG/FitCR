@@ -36,6 +36,8 @@
             GrdRutinas = new DataGridView();
             tabPage3 = new TabPage();
             GrdMediciones = new DataGridView();
+            tabPage4 = new TabPage();
+            GrdAumentos = new DataGridView();
             BtnVolver = new Button();
             pictureBox1 = new PictureBox();
             label1 = new Label();
@@ -46,6 +48,8 @@
             ((System.ComponentModel.ISupportInitialize)GrdRutinas).BeginInit();
             tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)GrdMediciones).BeginInit();
+            tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)GrdAumentos).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -55,11 +59,12 @@
             TabHistorial.Controls.Add(tabPage1);
             TabHistorial.Controls.Add(tabPage2);
             TabHistorial.Controls.Add(tabPage3);
+            TabHistorial.Controls.Add(tabPage4);
             TabHistorial.Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             TabHistorial.Location = new Point(415, 144);
             TabHistorial.Name = "TabHistorial";
             TabHistorial.SelectedIndex = 0;
-            TabHistorial.Size = new Size(503, 319);
+            TabHistorial.Size = new Size(560, 319);
             TabHistorial.TabIndex = 0;
             // 
             // tabPage1
@@ -72,7 +77,7 @@
             tabPage1.Location = new Point(4, 33);
             tabPage1.Name = "tabPage1";
             tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(495, 282);
+            tabPage1.Size = new Size(552, 282);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Visitas";
             // 
@@ -87,7 +92,7 @@
             GrdVisitas.Name = "GrdVisitas";
             GrdVisitas.ReadOnly = true;
             GrdVisitas.RowHeadersWidth = 51;
-            GrdVisitas.Size = new Size(485, 272);
+            GrdVisitas.Size = new Size(542, 272);
             GrdVisitas.TabIndex = 0;
             // 
             // tabPage2
@@ -97,7 +102,7 @@
             tabPage2.Location = new Point(4, 33);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(495, 282);
+            tabPage2.Size = new Size(552, 282);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Ultimas rutinas";
             tabPage2.UseVisualStyleBackColor = true;
@@ -111,7 +116,7 @@
             GrdRutinas.Name = "GrdRutinas";
             GrdRutinas.ReadOnly = true;
             GrdRutinas.RowHeadersWidth = 51;
-            GrdRutinas.Size = new Size(489, 276);
+            GrdRutinas.Size = new Size(546, 276);
             GrdRutinas.TabIndex = 0;
             // 
             // tabPage3
@@ -120,7 +125,7 @@
             tabPage3.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             tabPage3.Location = new Point(4, 33);
             tabPage3.Name = "tabPage3";
-            tabPage3.Size = new Size(495, 282);
+            tabPage3.Size = new Size(552, 282);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Mediciones";
             tabPage3.UseVisualStyleBackColor = true;
@@ -134,8 +139,31 @@
             GrdMediciones.Name = "GrdMediciones";
             GrdMediciones.ReadOnly = true;
             GrdMediciones.RowHeadersWidth = 51;
-            GrdMediciones.Size = new Size(495, 282);
+            GrdMediciones.Size = new Size(552, 282);
             GrdMediciones.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            tabPage4.Controls.Add(GrdAumentos);
+            tabPage4.Font = new Font("Calibri", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tabPage4.Location = new Point(4, 33);
+            tabPage4.Name = "tabPage4";
+            tabPage4.Size = new Size(552, 282);
+            tabPage4.TabIndex = 3;
+            tabPage4.Text = "Control de aumentos";
+            tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // GrdAumentos
+            // 
+            GrdAumentos.AllowUserToAddRows = false;
+            GrdAumentos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            GrdAumentos.Dock = DockStyle.Fill;
+            GrdAumentos.Location = new Point(0, 0);
+            GrdAumentos.Name = "GrdAumentos";
+            GrdAumentos.ReadOnly = true;
+            GrdAumentos.RowHeadersWidth = 51;
+            GrdAumentos.Size = new Size(552, 282);
+            GrdAumentos.TabIndex = 0;
             // 
             // BtnVolver
             // 
@@ -191,6 +219,8 @@
             ((System.ComponentModel.ISupportInitialize)GrdRutinas).EndInit();
             tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)GrdMediciones).EndInit();
+            tabPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)GrdAumentos).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -202,9 +232,11 @@
         private TabPage tabPage1;
         private TabPage tabPage2;
         private TabPage tabPage3;
+        private TabPage tabPage4;
         private DataGridView GrdVisitas;
         private DataGridView GrdRutinas;
         private DataGridView GrdMediciones;
+        private DataGridView GrdAumentos;
         private Button BtnVolver;
         private PictureBox pictureBox1;
         private Label label1;

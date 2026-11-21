@@ -37,7 +37,8 @@ namespace FitCR.Vista
         private void BtnHistorial_Click(object sender, EventArgs e)
         {
             var historialController = new HistorialController(InformationService);
-            var historialView = new HistorialView(historialController);
+            var aumentosController = new AumentosController(InformationService);
+            var historialView = new HistorialView(historialController, aumentosController);
             historialView.ShowDialog();
         }
 

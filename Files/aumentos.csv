@@ -1,0 +1,793 @@
+id,idUsuario,ejercicio,fecha,peso
+0,1,Press militar,2026-09-07,17.5
+1,4,Sentadilla,2026-09-07,45.0
+2,6,Press militar,2026-09-07,22.5
+3,7,Sentadilla,2026-09-07,45.0
+4,8,Prensa de piernas,2026-09-07,112.5
+5,8,Press de banca,2026-09-07,30.0
+6,9,Extension de triceps,2026-09-07,12.5
+7,10,Extension de triceps,2026-09-07,10.0
+8,10,Sentadilla,2026-09-07,65.0
+9,12,Extension de triceps,2026-09-07,12.5
+10,12,Peso muerto,2026-09-07,82.5
+11,14,Jalon al pecho,2026-09-07,60.0
+12,14,Press de banca,2026-09-07,30.0
+13,15,Remo con barra,2026-09-07,22.5
+14,15,Sentadilla,2026-09-07,45.0
+15,17,Sentadilla,2026-09-07,42.5
+16,18,Prensa de piernas,2026-09-07,57.5
+17,18,Sentadilla,2026-09-07,57.5
+18,19,Curl de biceps,2026-09-07,22.5
+19,20,Remo con barra,2026-09-07,47.5
+20,21,Hip thrust,2026-09-07,72.5
+21,23,Sentadilla,2026-09-07,40.0
+22,24,Remo con barra,2026-09-07,32.5
+23,25,Press militar,2026-09-07,27.5
+24,26,Press militar,2026-09-07,35.0
+25,30,Press militar,2026-09-07,27.5
+26,32,Jalon al pecho,2026-09-07,52.5
+27,35,Curl de biceps,2026-09-07,17.5
+28,38,Extension de triceps,2026-09-07,20.0
+29,39,Curl de biceps,2026-09-07,22.5
+30,0,Press de banca,2026-09-08,25.0
+31,0,Sentadilla,2026-09-08,40.0
+32,1,Peso muerto,2026-09-08,55.0
+33,2,Hip thrust,2026-09-08,32.5
+34,2,Remo con barra,2026-09-08,27.5
+35,3,Curl de biceps,2026-09-08,20.0
+36,5,Curl de biceps,2026-09-08,22.5
+37,5,Peso muerto,2026-09-08,85.0
+38,6,Jalon al pecho,2026-09-08,40.0
+39,7,Remo con barra,2026-09-08,27.5
+40,8,Jalon al pecho,2026-09-08,32.5
+41,8,Press militar,2026-09-08,15.0
+42,11,Hip thrust,2026-09-08,65.0
+43,11,Peso muerto,2026-09-08,77.5
+44,12,Hip thrust,2026-09-08,37.5
+45,13,Hip thrust,2026-09-08,62.5
+46,16,Curl de biceps,2026-09-08,22.5
+47,16,Peso muerto,2026-09-08,45.0
+48,17,Prensa de piernas,2026-09-08,92.5
+49,18,Curl de biceps,2026-09-08,25.0
+50,18,Hip thrust,2026-09-08,37.5
+51,20,Sentadilla,2026-09-08,55.0
+52,22,Extension de triceps,2026-09-08,12.5
+53,22,Hip thrust,2026-09-08,50.0
+54,22,Peso muerto,2026-09-08,45.0
+55,22,Remo con barra,2026-09-08,30.0
+56,23,Hip thrust,2026-09-08,67.5
+57,28,Press militar,2026-09-08,37.5
+58,30,Press de banca,2026-09-08,55.0
+59,31,Hip thrust,2026-09-08,42.5
+60,37,Prensa de piernas,2026-09-08,125.0
+61,37,Press de banca,2026-09-08,22.5
+62,38,Press militar,2026-09-08,35.0
+63,39,Peso muerto,2026-09-08,82.5
+64,39,Prensa de piernas,2026-09-08,90.0
+65,0,Peso muerto,2026-09-09,50.0
+66,2,Jalon al pecho,2026-09-09,57.5
+67,3,Sentadilla,2026-09-09,45.0
+68,4,Peso muerto,2026-09-09,80.0
+69,5,Hip thrust,2026-09-09,45.0
+70,7,Press de banca,2026-09-09,40.0
+71,9,Remo con barra,2026-09-09,40.0
+72,10,Jalon al pecho,2026-09-09,60.0
+73,11,Remo con barra,2026-09-09,40.0
+74,12,Press de banca,2026-09-09,52.5
+75,13,Sentadilla,2026-09-09,47.5
+76,14,Remo con barra,2026-09-09,40.0
+77,15,Press de banca,2026-09-09,37.5
+78,19,Hip thrust,2026-09-09,77.5
+79,21,Prensa de piernas,2026-09-09,90.0
+80,24,Press militar,2026-09-09,27.5
+81,25,Curl de biceps,2026-09-09,22.5
+82,26,Prensa de piernas,2026-09-09,95.0
+83,26,Remo con barra,2026-09-09,30.0
+84,27,Peso muerto,2026-09-09,52.5
+85,27,Press de banca,2026-09-09,52.5
+86,27,Remo con barra,2026-09-09,30.0
+87,28,Curl de biceps,2026-09-09,17.5
+88,28,Peso muerto,2026-09-09,52.5
+89,29,Prensa de piernas,2026-09-09,75.0
+90,30,Extension de triceps,2026-09-09,22.5
+91,31,Peso muerto,2026-09-09,47.5
+92,34,Remo con barra,2026-09-09,32.5
+93,36,Jalon al pecho,2026-09-09,37.5
+94,36,Press militar,2026-09-09,30.0
+95,37,Peso muerto,2026-09-09,70.0
+96,38,Remo con barra,2026-09-09,27.5
+97,1,Sentadilla,2026-09-10,65.0
+98,2,Peso muerto,2026-09-10,80.0
+99,3,Press de banca,2026-09-10,27.5
+100,4,Prensa de piernas,2026-09-10,67.5
+101,5,Press de banca,2026-09-10,27.5
+102,6,Extension de triceps,2026-09-10,7.5
+103,8,Sentadilla,2026-09-10,50.0
+104,10,Curl de biceps,2026-09-10,10.0
+105,10,Hip thrust,2026-09-10,30.0
+106,11,Curl de biceps,2026-09-10,10.0
+107,14,Press militar,2026-09-10,20.0
+108,16,Press de banca,2026-09-10,40.0
+109,17,Extension de triceps,2026-09-10,17.5
+110,17,Peso muerto,2026-09-10,50.0
+111,18,Press de banca,2026-09-10,50.0
+112,21,Jalon al pecho,2026-09-10,45.0
+113,22,Curl de biceps,2026-09-10,15.0
+114,23,Peso muerto,2026-09-10,60.0
+115,24,Extension de triceps,2026-09-10,25.0
+116,26,Press de banca,2026-09-10,35.0
+117,29,Hip thrust,2026-09-10,60.0
+118,29,Remo con barra,2026-09-10,27.5
+119,31,Press militar,2026-09-10,15.0
+120,33,Curl de biceps,2026-09-10,17.5
+121,33,Sentadilla,2026-09-10,35.0
+122,34,Jalon al pecho,2026-09-10,32.5
+123,34,Peso muerto,2026-09-10,72.5
+124,35,Press militar,2026-09-10,35.0
+125,36,Extension de triceps,2026-09-10,17.5
+126,38,Peso muerto,2026-09-10,82.5
+127,39,Press de banca,2026-09-10,25.0
+128,39,Sentadilla,2026-09-10,42.5
+129,2,Prensa de piernas,2026-09-11,52.5
+130,6,Hip thrust,2026-09-11,75.0
+131,11,Jalon al pecho,2026-09-11,40.0
+132,13,Jalon al pecho,2026-09-11,57.5
+133,15,Jalon al pecho,2026-09-11,57.5
+134,16,Remo con barra,2026-09-11,35.0
+135,20,Curl de biceps,2026-09-11,25.0
+136,24,Jalon al pecho,2026-09-11,55.0
+137,25,Jalon al pecho,2026-09-11,35.0
+138,26,Hip thrust,2026-09-11,52.5
+139,27,Curl de biceps,2026-09-11,22.5
+140,27,Sentadilla,2026-09-11,57.5
+141,30,Jalon al pecho,2026-09-11,27.5
+142,31,Extension de triceps,2026-09-11,25.0
+143,32,Remo con barra,2026-09-11,35.0
+144,34,Press militar,2026-09-11,20.0
+145,35,Prensa de piernas,2026-09-11,92.5
+146,36,Press de banca,2026-09-11,45.0
+147,1,Curl de biceps,2026-09-12,15.0
+148,1,Extension de triceps,2026-09-12,10.0
+149,4,Extension de triceps,2026-09-12,17.5
+150,6,Peso muerto,2026-09-12,90.0
+151,7,Press militar,2026-09-12,37.5
+152,9,Curl de biceps,2026-09-12,10.0
+153,9,Press de banca,2026-09-12,50.0
+154,12,Prensa de piernas,2026-09-12,70.0
+155,14,Sentadilla,2026-09-12,67.5
+156,17,Hip thrust,2026-09-12,45.0
+157,19,Jalon al pecho,2026-09-12,30.0
+158,19,Press militar,2026-09-12,22.5
+159,20,Extension de triceps,2026-09-12,7.5
+160,20,Press de banca,2026-09-12,57.5
+161,21,Extension de triceps,2026-09-12,12.5
+162,23,Jalon al pecho,2026-09-12,27.5
+163,24,Hip thrust,2026-09-12,32.5
+164,30,Prensa de piernas,2026-09-12,62.5
+165,31,Prensa de piernas,2026-09-12,60.0
+166,32,Press militar,2026-09-12,22.5
+167,33,Peso muerto,2026-09-12,57.5
+168,34,Prensa de piernas,2026-09-12,75.0
+169,38,Jalon al pecho,2026-09-12,32.5
+170,3,Jalon al pecho,2026-09-13,55.0
+171,3,Prensa de piernas,2026-09-13,55.0
+172,4,Hip thrust,2026-09-13,40.0
+173,5,Remo con barra,2026-09-13,47.5
+174,7,Extension de triceps,2026-09-13,22.5
+175,9,Sentadilla,2026-09-13,37.5
+176,13,Curl de biceps,2026-09-13,15.0
+177,13,Peso muerto,2026-09-13,77.5
+178,15,Curl de biceps,2026-09-13,22.5
+179,16,Jalon al pecho,2026-09-13,30.0
+180,19,Remo con barra,2026-09-13,50.0
+181,21,Remo con barra,2026-09-13,22.5
+182,23,Remo con barra,2026-09-13,27.5
+183,25,Extension de triceps,2026-09-13,25.0
+184,25,Remo con barra,2026-09-13,45.0
+185,28,Jalon al pecho,2026-09-13,52.5
+186,28,Sentadilla,2026-09-13,55.0
+187,29,Curl de biceps,2026-09-13,10.0
+188,29,Press militar,2026-09-13,32.5
+189,32,Curl de biceps,2026-09-13,17.5
+190,32,Press de banca,2026-09-13,55.0
+191,33,Prensa de piernas,2026-09-13,137.5
+192,33,Press militar,2026-09-13,35.0
+193,35,Extension de triceps,2026-09-13,10.0
+194,35,Sentadilla,2026-09-13,42.5
+195,36,Peso muerto,2026-09-13,50.0
+196,37,Curl de biceps,2026-09-13,20.0
+197,37,Extension de triceps,2026-09-13,10.0
+198,2,Remo con barra,2026-09-28,30.0
+199,3,Press de banca,2026-09-28,30.0
+200,7,Remo con barra,2026-09-28,30.0
+201,9,Press de banca,2026-09-28,55.0
+202,10,Hip thrust,2026-09-28,35.0
+203,11,Jalon al pecho,2026-09-28,40.0
+204,11,Remo con barra,2026-09-28,42.5
+205,12,Extension de triceps,2026-09-28,15.0
+206,12,Press de banca,2026-09-28,57.5
+207,15,Jalon al pecho,2026-09-28,60.0
+208,16,Jalon al pecho,2026-09-28,32.5
+209,17,Extension de triceps,2026-09-28,20.0
+210,20,Curl de biceps,2026-09-28,27.5
+211,21,Jalon al pecho,2026-09-28,47.5
+212,22,Remo con barra,2026-09-28,32.5
+213,25,Press militar,2026-09-28,30.0
+214,27,Press de banca,2026-09-28,52.5
+215,30,Jalon al pecho,2026-09-28,30.0
+216,34,Peso muerto,2026-09-28,72.5
+217,34,Remo con barra,2026-09-28,32.5
+218,35,Prensa de piernas,2026-09-28,97.5
+219,36,Jalon al pecho,2026-09-28,40.0
+220,36,Peso muerto,2026-09-28,55.0
+221,39,Sentadilla,2026-09-28,47.5
+222,3,Sentadilla,2026-09-29,47.5
+223,4,Hip thrust,2026-09-29,45.0
+224,7,Extension de triceps,2026-09-29,25.0
+225,10,Curl de biceps,2026-09-29,10.0
+226,11,Curl de biceps,2026-09-29,12.5
+227,13,Sentadilla,2026-09-29,50.0
+228,14,Press de banca,2026-09-29,32.5
+229,14,Sentadilla,2026-09-29,70.0
+230,15,Remo con barra,2026-09-29,27.5
+231,15,Sentadilla,2026-09-29,50.0
+232,16,Peso muerto,2026-09-29,47.5
+233,16,Remo con barra,2026-09-29,37.5
+234,18,Sentadilla,2026-09-29,57.5
+235,20,Remo con barra,2026-09-29,52.5
+236,22,Curl de biceps,2026-09-29,17.5
+237,22,Extension de triceps,2026-09-29,17.5
+238,22,Peso muerto,2026-09-29,50.0
+239,23,Sentadilla,2026-09-29,42.5
+240,26,Prensa de piernas,2026-09-29,100.0
+241,29,Curl de biceps,2026-09-29,12.5
+242,29,Prensa de piernas,2026-09-29,77.5
+243,29,Remo con barra,2026-09-29,30.0
+244,31,Peso muerto,2026-09-29,50.0
+245,31,Prensa de piernas,2026-09-29,62.5
+246,32,Jalon al pecho,2026-09-29,57.5
+247,32,Remo con barra,2026-09-29,37.5
+248,34,Prensa de piernas,2026-09-29,77.5
+249,35,Curl de biceps,2026-09-29,20.0
+250,36,Press militar,2026-09-29,35.0
+251,38,Jalon al pecho,2026-09-29,37.5
+252,39,Curl de biceps,2026-09-29,25.0
+253,5,Press de banca,2026-09-30,30.0
+254,6,Hip thrust,2026-09-30,75.0
+255,8,Press de banca,2026-09-30,32.5
+256,8,Sentadilla,2026-09-30,55.0
+257,10,Jalon al pecho,2026-09-30,62.5
+258,13,Jalon al pecho,2026-09-30,57.5
+259,15,Press de banca,2026-09-30,42.5
+260,16,Press de banca,2026-09-30,42.5
+261,18,Press de banca,2026-09-30,55.0
+262,19,Hip thrust,2026-09-30,80.0
+263,20,Press de banca,2026-09-30,57.5
+264,23,Peso muerto,2026-09-30,62.5
+265,24,Jalon al pecho,2026-09-30,57.5
+266,25,Jalon al pecho,2026-09-30,37.5
+267,26,Hip thrust,2026-09-30,52.5
+268,27,Remo con barra,2026-09-30,32.5
+269,28,Press militar,2026-09-30,40.0
+270,31,Extension de triceps,2026-09-30,27.5
+271,31,Hip thrust,2026-09-30,45.0
+272,33,Press militar,2026-09-30,37.5
+273,35,Press militar,2026-09-30,37.5
+274,38,Peso muerto,2026-09-30,87.5
+275,39,Press de banca,2026-09-30,27.5
+276,1,Extension de triceps,2026-10-01,15.0
+277,2,Hip thrust,2026-10-01,35.0
+278,4,Extension de triceps,2026-10-01,20.0
+279,5,Remo con barra,2026-10-01,52.5
+280,8,Jalon al pecho,2026-10-01,35.0
+281,8,Press militar,2026-10-01,17.5
+282,12,Hip thrust,2026-10-01,40.0
+283,14,Remo con barra,2026-10-01,40.0
+284,16,Curl de biceps,2026-10-01,27.5
+285,17,Peso muerto,2026-10-01,55.0
+286,19,Curl de biceps,2026-10-01,22.5
+287,19,Jalon al pecho,2026-10-01,35.0
+288,24,Hip thrust,2026-10-01,35.0
+289,26,Press militar,2026-10-01,37.5
+290,27,Sentadilla,2026-10-01,60.0
+291,29,Hip thrust,2026-10-01,65.0
+292,30,Press de banca,2026-10-01,57.5
+293,36,Extension de triceps,2026-10-01,17.5
+294,37,Curl de biceps,2026-10-01,25.0
+295,37,Peso muerto,2026-10-01,72.5
+296,1,Sentadilla,2026-10-02,65.0
+297,2,Peso muerto,2026-10-02,82.5
+298,3,Curl de biceps,2026-10-02,20.0
+299,3,Jalon al pecho,2026-10-02,57.5
+300,4,Peso muerto,2026-10-02,80.0
+301,5,Curl de biceps,2026-10-02,25.0
+302,7,Sentadilla,2026-10-02,47.5
+303,9,Curl de biceps,2026-10-02,12.5
+304,11,Peso muerto,2026-10-02,77.5
+305,12,Prensa de piernas,2026-10-02,72.5
+306,13,Peso muerto,2026-10-02,80.0
+307,14,Press militar,2026-10-02,22.5
+308,17,Sentadilla,2026-10-02,45.0
+309,18,Hip thrust,2026-10-02,40.0
+310,19,Remo con barra,2026-10-02,52.5
+311,21,Hip thrust,2026-10-02,75.0
+312,21,Prensa de piernas,2026-10-02,92.5
+313,21,Remo con barra,2026-10-02,25.0
+314,22,Hip thrust,2026-10-02,55.0
+315,23,Jalon al pecho,2026-10-02,32.5
+316,23,Remo con barra,2026-10-02,27.5
+317,25,Extension de triceps,2026-10-02,27.5
+318,26,Press de banca,2026-10-02,40.0
+319,30,Extension de triceps,2026-10-02,25.0
+320,32,Curl de biceps,2026-10-02,22.5
+321,33,Sentadilla,2026-10-02,37.5
+322,37,Extension de triceps,2026-10-02,12.5
+323,37,Prensa de piernas,2026-10-02,127.5
+324,37,Press de banca,2026-10-02,27.5
+325,38,Remo con barra,2026-10-02,30.0
+326,1,Curl de biceps,2026-10-03,20.0
+327,1,Peso muerto,2026-10-03,55.0
+328,2,Prensa de piernas,2026-10-03,55.0
+329,4,Sentadilla,2026-10-03,47.5
+330,6,Extension de triceps,2026-10-03,12.5
+331,6,Peso muerto,2026-10-03,90.0
+332,8,Prensa de piernas,2026-10-03,115.0
+333,10,Extension de triceps,2026-10-03,10.0
+334,11,Hip thrust,2026-10-03,65.0
+335,12,Peso muerto,2026-10-03,87.5
+336,14,Jalon al pecho,2026-10-03,60.0
+337,18,Prensa de piernas,2026-10-03,62.5
+338,20,Extension de triceps,2026-10-03,10.0
+339,21,Extension de triceps,2026-10-03,15.0
+340,23,Hip thrust,2026-10-03,70.0
+341,28,Curl de biceps,2026-10-03,20.0
+342,28,Jalon al pecho,2026-10-03,57.5
+343,28,Sentadilla,2026-10-03,60.0
+344,29,Press militar,2026-10-03,37.5
+345,30,Prensa de piernas,2026-10-03,62.5
+346,30,Press militar,2026-10-03,30.0
+347,31,Press militar,2026-10-03,17.5
+348,32,Press de banca,2026-10-03,57.5
+349,34,Press militar,2026-10-03,22.5
+350,36,Press de banca,2026-10-03,47.5
+351,38,Extension de triceps,2026-10-03,25.0
+352,1,Press militar,2026-10-04,22.5
+353,2,Jalon al pecho,2026-10-04,62.5
+354,3,Prensa de piernas,2026-10-04,55.0
+355,4,Prensa de piernas,2026-10-04,67.5
+356,5,Hip thrust,2026-10-04,47.5
+357,5,Peso muerto,2026-10-04,85.0
+358,6,Jalon al pecho,2026-10-04,40.0
+359,6,Press militar,2026-10-04,22.5
+360,7,Press de banca,2026-10-04,40.0
+361,7,Press militar,2026-10-04,40.0
+362,9,Extension de triceps,2026-10-04,17.5
+363,9,Remo con barra,2026-10-04,42.5
+364,9,Sentadilla,2026-10-04,40.0
+365,10,Sentadilla,2026-10-04,70.0
+366,13,Curl de biceps,2026-10-04,17.5
+367,13,Hip thrust,2026-10-04,65.0
+368,15,Curl de biceps,2026-10-04,27.5
+369,17,Hip thrust,2026-10-04,47.5
+370,17,Prensa de piernas,2026-10-04,92.5
+371,18,Curl de biceps,2026-10-04,30.0
+372,19,Press militar,2026-10-04,27.5
+373,20,Sentadilla,2026-10-04,55.0
+374,24,Extension de triceps,2026-10-04,30.0
+375,24,Press militar,2026-10-04,30.0
+376,24,Remo con barra,2026-10-04,37.5
+377,25,Curl de biceps,2026-10-04,27.5
+378,25,Remo con barra,2026-10-04,47.5
+379,26,Remo con barra,2026-10-04,30.0
+380,27,Curl de biceps,2026-10-04,22.5
+381,27,Peso muerto,2026-10-04,55.0
+382,28,Peso muerto,2026-10-04,55.0
+383,32,Press militar,2026-10-04,25.0
+384,33,Curl de biceps,2026-10-04,20.0
+385,33,Peso muerto,2026-10-04,60.0
+386,33,Prensa de piernas,2026-10-04,140.0
+387,34,Jalon al pecho,2026-10-04,35.0
+388,35,Extension de triceps,2026-10-04,12.5
+389,35,Sentadilla,2026-10-04,45.0
+390,38,Press militar,2026-10-04,40.0
+391,39,Peso muerto,2026-10-04,85.0
+392,39,Prensa de piernas,2026-10-04,92.5
+393,0,Press de banca,2026-10-06,27.5
+394,0,Sentadilla,2026-10-06,45.0
+395,0,Peso muerto,2026-10-07,55.0
+396,2,Hip thrust,2026-10-19,37.5
+397,4,Prensa de piernas,2026-10-19,72.5
+398,5,Press de banca,2026-10-19,32.5
+399,6,Jalon al pecho,2026-10-19,42.5
+400,7,Remo con barra,2026-10-19,30.0
+401,8,Prensa de piernas,2026-10-19,117.5
+402,9,Curl de biceps,2026-10-19,12.5
+403,11,Peso muerto,2026-10-19,77.5
+404,14,Jalon al pecho,2026-10-19,62.5
+405,17,Extension de triceps,2026-10-19,22.5
+406,17,Peso muerto,2026-10-19,60.0
+407,19,Curl de biceps,2026-10-19,25.0
+408,19,Remo con barra,2026-10-19,52.5
+409,23,Jalon al pecho,2026-10-19,32.5
+410,23,Peso muerto,2026-10-19,62.5
+411,23,Remo con barra,2026-10-19,30.0
+412,23,Sentadilla,2026-10-19,42.5
+413,26,Hip thrust,2026-10-19,55.0
+414,27,Peso muerto,2026-10-19,57.5
+415,28,Press militar,2026-10-19,42.5
+416,30,Extension de triceps,2026-10-19,30.0
+417,31,Hip thrust,2026-10-19,47.5
+418,31,Prensa de piernas,2026-10-19,67.5
+419,32,Jalon al pecho,2026-10-19,57.5
+420,34,Peso muerto,2026-10-19,75.0
+421,34,Remo con barra,2026-10-19,37.5
+422,35,Extension de triceps,2026-10-19,15.0
+423,36,Extension de triceps,2026-10-19,22.5
+424,36,Jalon al pecho,2026-10-19,42.5
+425,36,Press de banca,2026-10-19,47.5
+426,38,Remo con barra,2026-10-19,32.5
+427,1,Press militar,2026-10-20,27.5
+428,2,Remo con barra,2026-10-20,32.5
+429,5,Hip thrust,2026-10-20,47.5
+430,7,Extension de triceps,2026-10-20,27.5
+431,8,Press de banca,2026-10-20,32.5
+432,9,Extension de triceps,2026-10-20,20.0
+433,9,Press de banca,2026-10-20,60.0
+434,9,Sentadilla,2026-10-20,45.0
+435,13,Curl de biceps,2026-10-20,20.0
+436,14,Press de banca,2026-10-20,35.0
+437,15,Press de banca,2026-10-20,42.5
+438,15,Sentadilla,2026-10-20,55.0
+439,17,Hip thrust,2026-10-20,50.0
+440,17,Prensa de piernas,2026-10-20,97.5
+441,19,Jalon al pecho,2026-10-20,37.5
+442,20,Sentadilla,2026-10-20,57.5
+443,21,Prensa de piernas,2026-10-20,92.5
+444,21,Remo con barra,2026-10-20,25.0
+445,22,Extension de triceps,2026-10-20,20.0
+446,25,Press militar,2026-10-20,30.0
+447,26,Prensa de piernas,2026-10-20,102.5
+448,28,Curl de biceps,2026-10-20,20.0
+449,29,Curl de biceps,2026-10-20,12.5
+450,29,Remo con barra,2026-10-20,32.5
+451,33,Peso muerto,2026-10-20,60.0
+452,33,Prensa de piernas,2026-10-20,140.0
+453,33,Sentadilla,2026-10-20,40.0
+454,36,Peso muerto,2026-10-20,57.5
+455,39,Press de banca,2026-10-20,30.0
+456,3,Jalon al pecho,2026-10-21,62.5
+457,5,Curl de biceps,2026-10-21,27.5
+458,6,Hip thrust,2026-10-21,77.5
+459,8,Jalon al pecho,2026-10-21,37.5
+460,9,Remo con barra,2026-10-21,45.0
+461,10,Sentadilla,2026-10-21,75.0
+462,11,Remo con barra,2026-10-21,45.0
+463,15,Remo con barra,2026-10-21,32.5
+464,18,Press de banca,2026-10-21,60.0
+465,19,Hip thrust,2026-10-21,85.0
+466,20,Press de banca,2026-10-21,57.5
+467,22,Curl de biceps,2026-10-21,20.0
+468,23,Hip thrust,2026-10-21,72.5
+469,24,Hip thrust,2026-10-21,35.0
+470,25,Extension de triceps,2026-10-21,32.5
+471,27,Remo con barra,2026-10-21,35.0
+472,27,Sentadilla,2026-10-21,62.5
+473,28,Peso muerto,2026-10-21,55.0
+474,29,Press militar,2026-10-21,40.0
+475,31,Peso muerto,2026-10-21,55.0
+476,32,Remo con barra,2026-10-21,42.5
+477,34,Press militar,2026-10-21,25.0
+478,35,Prensa de piernas,2026-10-21,97.5
+479,35,Press militar,2026-10-21,37.5
+480,37,Prensa de piernas,2026-10-21,130.0
+481,37,Press de banca,2026-10-21,27.5
+482,38,Extension de triceps,2026-10-21,25.0
+483,38,Jalon al pecho,2026-10-21,37.5
+484,39,Curl de biceps,2026-10-21,27.5
+485,2,Peso muerto,2026-10-22,87.5
+486,3,Prensa de piernas,2026-10-22,57.5
+487,3,Press de banca,2026-10-22,32.5
+488,4,Peso muerto,2026-10-22,82.5
+489,6,Peso muerto,2026-10-22,95.0
+490,7,Press militar,2026-10-22,42.5
+491,8,Press militar,2026-10-22,22.5
+492,11,Curl de biceps,2026-10-22,15.0
+493,11,Jalon al pecho,2026-10-22,42.5
+494,12,Prensa de piernas,2026-10-22,75.0
+495,12,Press de banca,2026-10-22,57.5
+496,13,Jalon al pecho,2026-10-22,62.5
+497,16,Jalon al pecho,2026-10-22,35.0
+498,16,Remo con barra,2026-10-22,40.0
+499,17,Sentadilla,2026-10-22,50.0
+500,21,Extension de triceps,2026-10-22,20.0
+501,21,Jalon al pecho,2026-10-22,47.5
+502,22,Remo con barra,2026-10-22,35.0
+503,24,Press militar,2026-10-22,32.5
+504,24,Remo con barra,2026-10-22,40.0
+505,25,Curl de biceps,2026-10-22,27.5
+506,26,Press de banca,2026-10-22,42.5
+507,26,Press militar,2026-10-22,42.5
+508,27,Press de banca,2026-10-22,55.0
+509,28,Jalon al pecho,2026-10-22,62.5
+510,30,Press de banca,2026-10-22,60.0
+511,35,Curl de biceps,2026-10-22,22.5
+512,1,Extension de triceps,2026-10-23,17.5
+513,1,Sentadilla,2026-10-23,70.0
+514,2,Prensa de piernas,2026-10-23,57.5
+515,3,Curl de biceps,2026-10-23,25.0
+516,4,Extension de triceps,2026-10-23,20.0
+517,5,Peso muerto,2026-10-23,87.5
+518,6,Extension de triceps,2026-10-23,12.5
+519,6,Press militar,2026-10-23,25.0
+520,8,Sentadilla,2026-10-23,60.0
+521,10,Curl de biceps,2026-10-23,15.0
+522,12,Extension de triceps,2026-10-23,20.0
+523,18,Hip thrust,2026-10-23,42.5
+524,20,Curl de biceps,2026-10-23,27.5
+525,20,Extension de triceps,2026-10-23,10.0
+526,29,Prensa de piernas,2026-10-23,77.5
+527,30,Press militar,2026-10-23,32.5
+528,32,Press de banca,2026-10-23,57.5
+529,32,Press militar,2026-10-23,30.0
+530,33,Press militar,2026-10-23,42.5
+531,34,Jalon al pecho,2026-10-23,35.0
+532,1,Peso muerto,2026-10-24,55.0
+533,4,Hip thrust,2026-10-24,45.0
+534,5,Remo con barra,2026-10-24,55.0
+535,7,Press de banca,2026-10-24,42.5
+536,10,Hip thrust,2026-10-24,35.0
+537,12,Hip thrust,2026-10-24,40.0
+538,13,Peso muerto,2026-10-24,80.0
+539,13,Sentadilla,2026-10-24,52.5
+540,14,Press militar,2026-10-24,25.0
+541,14,Sentadilla,2026-10-24,75.0
+542,15,Curl de biceps,2026-10-24,32.5
+543,16,Curl de biceps,2026-10-24,30.0
+544,16,Peso muerto,2026-10-24,52.5
+545,18,Curl de biceps,2026-10-24,32.5
+546,19,Press militar,2026-10-24,27.5
+547,25,Remo con barra,2026-10-24,52.5
+548,27,Curl de biceps,2026-10-24,25.0
+549,29,Hip thrust,2026-10-24,67.5
+550,30,Jalon al pecho,2026-10-24,32.5
+551,30,Prensa de piernas,2026-10-24,62.5
+552,31,Press militar,2026-10-24,22.5
+553,32,Curl de biceps,2026-10-24,22.5
+554,34,Prensa de piernas,2026-10-24,80.0
+555,35,Sentadilla,2026-10-24,47.5
+556,37,Peso muerto,2026-10-24,72.5
+557,39,Peso muerto,2026-10-24,90.0
+558,39,Prensa de piernas,2026-10-24,95.0
+559,39,Sentadilla,2026-10-24,52.5
+560,1,Curl de biceps,2026-10-25,25.0
+561,2,Jalon al pecho,2026-10-25,65.0
+562,3,Sentadilla,2026-10-25,50.0
+563,4,Sentadilla,2026-10-25,52.5
+564,7,Sentadilla,2026-10-25,47.5
+565,10,Extension de triceps,2026-10-25,12.5
+566,10,Jalon al pecho,2026-10-25,65.0
+567,11,Hip thrust,2026-10-25,70.0
+568,12,Peso muerto,2026-10-25,90.0
+569,13,Hip thrust,2026-10-25,65.0
+570,14,Remo con barra,2026-10-25,42.5
+571,15,Jalon al pecho,2026-10-25,62.5
+572,16,Press de banca,2026-10-25,45.0
+573,18,Prensa de piernas,2026-10-25,62.5
+574,18,Sentadilla,2026-10-25,60.0
+575,20,Remo con barra,2026-10-25,55.0
+576,21,Hip thrust,2026-10-25,77.5
+577,22,Hip thrust,2026-10-25,57.5
+578,22,Peso muerto,2026-10-25,50.0
+579,24,Extension de triceps,2026-10-25,32.5
+580,24,Jalon al pecho,2026-10-25,57.5
+581,25,Jalon al pecho,2026-10-25,42.5
+582,26,Remo con barra,2026-10-25,32.5
+583,28,Sentadilla,2026-10-25,65.0
+584,31,Extension de triceps,2026-10-25,27.5
+585,33,Curl de biceps,2026-10-25,25.0
+586,36,Press militar,2026-10-25,37.5
+587,37,Curl de biceps,2026-10-25,25.0
+588,37,Extension de triceps,2026-10-25,17.5
+589,38,Peso muerto,2026-10-25,90.0
+590,38,Press militar,2026-10-25,42.5
+591,0,Press de banca,2026-11-03,30.0
+592,0,Sentadilla,2026-11-03,50.0
+593,0,Peso muerto,2026-11-04,60.0
+594,1,Curl de biceps,2026-11-09,30.0
+595,1,Extension de triceps,2026-11-09,17.5
+596,1,Press militar,2026-11-09,27.5
+597,4,Hip thrust,2026-11-09,50.0
+598,4,Peso muerto,2026-11-09,85.0
+599,4,Prensa de piernas,2026-11-09,75.0
+600,9,Remo con barra,2026-11-09,47.5
+601,10,Curl de biceps,2026-11-09,15.0
+602,10,Jalon al pecho,2026-11-09,67.5
+603,11,Curl de biceps,2026-11-09,15.0
+604,12,Prensa de piernas,2026-11-09,77.5
+605,13,Jalon al pecho,2026-11-09,65.0
+606,13,Sentadilla,2026-11-09,55.0
+607,14,Jalon al pecho,2026-11-09,65.0
+608,17,Prensa de piernas,2026-11-09,97.5
+609,17,Sentadilla,2026-11-09,50.0
+610,18,Prensa de piernas,2026-11-09,65.0
+611,20,Sentadilla,2026-11-09,57.5
+612,22,Extension de triceps,2026-11-09,22.5
+613,23,Sentadilla,2026-11-09,45.0
+614,24,Hip thrust,2026-11-09,35.0
+615,25,Extension de triceps,2026-11-09,32.5
+616,27,Curl de biceps,2026-11-09,27.5
+617,29,Press militar,2026-11-09,45.0
+618,30,Prensa de piernas,2026-11-09,62.5
+619,30,Press de banca,2026-11-09,62.5
+620,33,Press militar,2026-11-09,45.0
+621,34,Prensa de piernas,2026-11-09,85.0
+622,35,Curl de biceps,2026-11-09,22.5
+623,35,Extension de triceps,2026-11-09,17.5
+624,39,Press de banca,2026-11-09,32.5
+625,1,Sentadilla,2026-11-10,70.0
+626,3,Curl de biceps,2026-11-10,30.0
+627,4,Extension de triceps,2026-11-10,20.0
+628,5,Peso muerto,2026-11-10,87.5
+629,6,Press militar,2026-11-10,27.5
+630,7,Press de banca,2026-11-10,45.0
+631,8,Press de banca,2026-11-10,32.5
+632,8,Sentadilla,2026-11-10,62.5
+633,9,Extension de triceps,2026-11-10,22.5
+634,10,Hip thrust,2026-11-10,40.0
+635,11,Hip thrust,2026-11-10,72.5
+636,16,Peso muerto,2026-11-10,57.5
+637,17,Extension de triceps,2026-11-10,25.0
+638,18,Sentadilla,2026-11-10,60.0
+639,20,Remo con barra,2026-11-10,57.5
+640,21,Prensa de piernas,2026-11-10,95.0
+641,21,Remo con barra,2026-11-10,30.0
+642,23,Hip thrust,2026-11-10,72.5
+643,23,Peso muerto,2026-11-10,62.5
+644,23,Remo con barra,2026-11-10,35.0
+645,26,Press de banca,2026-11-10,47.5
+646,27,Remo con barra,2026-11-10,40.0
+647,28,Curl de biceps,2026-11-10,20.0
+648,28,Peso muerto,2026-11-10,55.0
+649,30,Jalon al pecho,2026-11-10,35.0
+650,31,Peso muerto,2026-11-10,60.0
+651,31,Press militar,2026-11-10,25.0
+652,32,Press de banca,2026-11-10,57.5
+653,32,Remo con barra,2026-11-10,47.5
+654,33,Prensa de piernas,2026-11-10,140.0
+655,33,Sentadilla,2026-11-10,42.5
+656,36,Extension de triceps,2026-11-10,27.5
+657,36,Peso muerto,2026-11-10,62.5
+658,37,Peso muerto,2026-11-10,77.5
+659,39,Peso muerto,2026-11-10,92.5
+660,2,Peso muerto,2026-11-11,90.0
+661,3,Prensa de piernas,2026-11-11,62.5
+662,7,Extension de triceps,2026-11-11,30.0
+663,8,Jalon al pecho,2026-11-11,37.5
+664,8,Prensa de piernas,2026-11-11,120.0
+665,11,Peso muerto,2026-11-11,82.5
+666,12,Extension de triceps,2026-11-11,22.5
+667,12,Hip thrust,2026-11-11,42.5
+668,14,Press de banca,2026-11-11,40.0
+669,15,Remo con barra,2026-11-11,35.0
+670,19,Curl de biceps,2026-11-11,27.5
+671,19,Remo con barra,2026-11-11,57.5
+672,20,Press de banca,2026-11-11,60.0
+673,21,Hip thrust,2026-11-11,80.0
+674,21,Jalon al pecho,2026-11-11,47.5
+675,22,Peso muerto,2026-11-11,50.0
+676,22,Remo con barra,2026-11-11,35.0
+677,24,Extension de triceps,2026-11-11,32.5
+678,24,Remo con barra,2026-11-11,42.5
+679,25,Jalon al pecho,2026-11-11,45.0
+680,26,Remo con barra,2026-11-11,32.5
+681,35,Sentadilla,2026-11-11,47.5
+682,36,Press militar,2026-11-11,40.0
+683,37,Extension de triceps,2026-11-11,22.5
+684,38,Extension de triceps,2026-11-11,27.5
+685,38,Remo con barra,2026-11-11,32.5
+686,2,Hip thrust,2026-11-12,40.0
+687,2,Prensa de piernas,2026-11-12,60.0
+688,5,Hip thrust,2026-11-12,47.5
+689,7,Sentadilla,2026-11-12,52.5
+690,8,Press militar,2026-11-12,25.0
+691,9,Sentadilla,2026-11-12,50.0
+692,14,Sentadilla,2026-11-12,80.0
+693,15,Press de banca,2026-11-12,45.0
+694,15,Sentadilla,2026-11-12,55.0
+695,16,Jalon al pecho,2026-11-12,37.5
+696,16,Press de banca,2026-11-12,47.5
+697,17,Hip thrust,2026-11-12,55.0
+698,18,Curl de biceps,2026-11-12,37.5
+699,18,Hip thrust,2026-11-12,45.0
+700,19,Press militar,2026-11-12,27.5
+701,20,Extension de triceps,2026-11-12,15.0
+702,22,Curl de biceps,2026-11-12,20.0
+703,24,Press militar,2026-11-12,32.5
+704,25,Press militar,2026-11-12,35.0
+705,26,Hip thrust,2026-11-12,60.0
+706,27,Press de banca,2026-11-12,57.5
+707,28,Jalon al pecho,2026-11-12,62.5
+708,32,Jalon al pecho,2026-11-12,62.5
+709,32,Press militar,2026-11-12,30.0
+710,33,Curl de biceps,2026-11-12,25.0
+711,35,Prensa de piernas,2026-11-12,97.5
+712,37,Prensa de piernas,2026-11-12,135.0
+713,38,Press militar,2026-11-12,45.0
+714,3,Press de banca,2026-11-13,37.5
+715,3,Sentadilla,2026-11-13,55.0
+716,4,Sentadilla,2026-11-13,55.0
+717,5,Remo con barra,2026-11-13,57.5
+718,6,Hip thrust,2026-11-13,82.5
+719,6,Jalon al pecho,2026-11-13,45.0
+720,6,Peso muerto,2026-11-13,95.0
+721,9,Curl de biceps,2026-11-13,17.5
+722,9,Press de banca,2026-11-13,60.0
+723,10,Extension de triceps,2026-11-13,12.5
+724,11,Jalon al pecho,2026-11-13,45.0
+725,12,Peso muerto,2026-11-13,92.5
+726,13,Curl de biceps,2026-11-13,22.5
+727,15,Jalon al pecho,2026-11-13,65.0
+728,17,Peso muerto,2026-11-13,62.5
+729,23,Jalon al pecho,2026-11-13,37.5
+730,26,Press militar,2026-11-13,47.5
+731,28,Sentadilla,2026-11-13,65.0
+732,29,Remo con barra,2026-11-13,37.5
+733,30,Extension de triceps,2026-11-13,35.0
+734,34,Jalon al pecho,2026-11-13,37.5
+735,34,Remo con barra,2026-11-13,42.5
+736,36,Jalon al pecho,2026-11-13,45.0
+737,38,Jalon al pecho,2026-11-13,42.5
+738,38,Peso muerto,2026-11-13,90.0
+739,39,Curl de biceps,2026-11-13,30.0
+740,1,Peso muerto,2026-11-14,55.0
+741,2,Jalon al pecho,2026-11-14,70.0
+742,2,Remo con barra,2026-11-14,37.5
+743,7,Press militar,2026-11-14,47.5
+744,10,Sentadilla,2026-11-14,77.5
+745,12,Press de banca,2026-11-14,60.0
+746,13,Peso muerto,2026-11-14,85.0
+747,14,Remo con barra,2026-11-14,42.5
+748,15,Curl de biceps,2026-11-14,37.5
+749,16,Curl de biceps,2026-11-14,30.0
+750,16,Remo con barra,2026-11-14,40.0
+751,18,Press de banca,2026-11-14,62.5
+752,22,Hip thrust,2026-11-14,60.0
+753,26,Prensa de piernas,2026-11-14,105.0
+754,27,Peso muerto,2026-11-14,60.0
+755,27,Sentadilla,2026-11-14,65.0
+756,29,Curl de biceps,2026-11-14,15.0
+757,30,Press militar,2026-11-14,37.5
+758,31,Hip thrust,2026-11-14,50.0
+759,31,Prensa de piernas,2026-11-14,72.5
+760,32,Curl de biceps,2026-11-14,27.5
+761,33,Peso muerto,2026-11-14,60.0
+762,34,Press militar,2026-11-14,27.5
+763,35,Press militar,2026-11-14,40.0
+764,37,Curl de biceps,2026-11-14,27.5
+765,37,Press de banca,2026-11-14,30.0
+766,39,Prensa de piernas,2026-11-14,97.5
+767,3,Jalon al pecho,2026-11-15,67.5
+768,5,Curl de biceps,2026-11-15,30.0
+769,5,Press de banca,2026-11-15,32.5
+770,6,Extension de triceps,2026-11-15,17.5
+771,7,Remo con barra,2026-11-15,32.5
+772,11,Remo con barra,2026-11-15,47.5
+773,13,Hip thrust,2026-11-15,67.5
+774,14,Press militar,2026-11-15,25.0
+775,19,Hip thrust,2026-11-15,85.0
+776,19,Jalon al pecho,2026-11-15,37.5
+777,20,Curl de biceps,2026-11-15,30.0
+778,21,Extension de triceps,2026-11-15,20.0
+779,24,Jalon al pecho,2026-11-15,60.0
+780,25,Curl de biceps,2026-11-15,32.5
+781,25,Remo con barra,2026-11-15,55.0
+782,28,Press militar,2026-11-15,42.5
+783,29,Hip thrust,2026-11-15,67.5
+784,29,Prensa de piernas,2026-11-15,80.0
+785,31,Extension de triceps,2026-11-15,27.5
+786,34,Peso muerto,2026-11-15,80.0
+787,36,Press de banca,2026-11-15,52.5
+788,39,Sentadilla,2026-11-15,55.0
+789,0,Press de banca,2026-11-16,30.0
+790,0,Sentadilla,2026-11-16,55.0
+791,0,Peso muerto,2026-11-17,65.0
