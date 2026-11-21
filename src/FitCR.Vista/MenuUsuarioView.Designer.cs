@@ -36,6 +36,7 @@
             BtnEstadisticas = new Button();
             BtnInsignias = new Button();
             BtnClases = new Button();
+            BtnNotificaciones = new Button();
             BtnCerrarSesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -55,7 +56,7 @@
             LblBienvenida.AutoSize = true;
             LblBienvenida.Font = new Font("Calibri", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             LblBienvenida.ForeColor = Color.White;
-            LblBienvenida.Location = new Point(604, 167);
+            LblBienvenida.Location = new Point(604, 130);
             LblBienvenida.Name = "LblBienvenida";
             LblBienvenida.Size = new Size(89, 37);
             LblBienvenida.TabIndex = 2;
@@ -65,7 +66,7 @@
             // 
             BtnPerfil.BackColor = Color.Lime;
             BtnPerfil.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnPerfil.Location = new Point(483, 276);
+            BtnPerfil.Location = new Point(483, 210);
             BtnPerfil.Margin = new Padding(4, 5, 4, 5);
             BtnPerfil.Name = "BtnPerfil";
             BtnPerfil.Size = new Size(423, 54);
@@ -78,7 +79,7 @@
             // 
             BtnHistorial.BackColor = Color.Lime;
             BtnHistorial.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnHistorial.Location = new Point(483, 353);
+            BtnHistorial.Location = new Point(483, 280);
             BtnHistorial.Margin = new Padding(4, 5, 4, 5);
             BtnHistorial.Name = "BtnHistorial";
             BtnHistorial.Size = new Size(423, 54);
@@ -91,7 +92,7 @@
             // 
             BtnEstadisticas.BackColor = Color.Lime;
             BtnEstadisticas.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnEstadisticas.Location = new Point(483, 431);
+            BtnEstadisticas.Location = new Point(483, 350);
             BtnEstadisticas.Margin = new Padding(4, 5, 4, 5);
             BtnEstadisticas.Name = "BtnEstadisticas";
             BtnEstadisticas.Size = new Size(423, 54);
@@ -104,7 +105,7 @@
             // 
             BtnInsignias.BackColor = Color.Lime;
             BtnInsignias.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnInsignias.Location = new Point(483, 509);
+            BtnInsignias.Location = new Point(483, 420);
             BtnInsignias.Margin = new Padding(4, 5, 4, 5);
             BtnInsignias.Name = "BtnInsignias";
             BtnInsignias.Size = new Size(423, 54);
@@ -117,7 +118,7 @@
             // 
             BtnClases.BackColor = Color.Lime;
             BtnClases.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnClases.Location = new Point(483, 587);
+            BtnClases.Location = new Point(483, 490);
             BtnClases.Margin = new Padding(4, 5, 4, 5);
             BtnClases.Name = "BtnClases";
             BtnClases.Size = new Size(423, 54);
@@ -126,11 +127,24 @@
             BtnClases.UseVisualStyleBackColor = false;
             BtnClases.Click += BtnClases_Click;
             // 
+            // BtnNotificaciones
+            // 
+            BtnNotificaciones.BackColor = Color.Lime;
+            BtnNotificaciones.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnNotificaciones.Location = new Point(483, 560);
+            BtnNotificaciones.Margin = new Padding(4, 5, 4, 5);
+            BtnNotificaciones.Name = "BtnNotificaciones";
+            BtnNotificaciones.Size = new Size(423, 54);
+            BtnNotificaciones.TabIndex = 21;
+            BtnNotificaciones.Text = "Notificaciones";
+            BtnNotificaciones.UseVisualStyleBackColor = false;
+            BtnNotificaciones.Click += BtnNotificaciones_Click;
+            // 
             // BtnCerrarSesion
             // 
             BtnCerrarSesion.BackColor = Color.Lime;
             BtnCerrarSesion.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCerrarSesion.Location = new Point(483, 665);
+            BtnCerrarSesion.Location = new Point(483, 630);
             BtnCerrarSesion.Margin = new Padding(4, 5, 4, 5);
             BtnCerrarSesion.Name = "BtnCerrarSesion";
             BtnCerrarSesion.Size = new Size(423, 54);
@@ -146,6 +160,7 @@
             BackColor = Color.Black;
             ClientSize = new Size(1388, 741);
             Controls.Add(BtnCerrarSesion);
+            Controls.Add(BtnNotificaciones);
             Controls.Add(BtnClases);
             Controls.Add(BtnInsignias);
             Controls.Add(BtnEstadisticas);
@@ -169,6 +184,7 @@
         private Button BtnEstadisticas;
         private Button BtnInsignias;
         private Button BtnClases;
+        private Button BtnNotificaciones;
         private Button BtnCerrarSesion;
     }
 }

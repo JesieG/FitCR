@@ -63,6 +63,15 @@ namespace FitCR.Vista
             clasesView.ShowDialog();
         }
 
+        private void BtnNotificaciones_Click(object sender, EventArgs e)
+        {
+            var estadisticasController = new EstadisticasController(InformationService);
+            var insigniasController = new InsigniasController(InformationService, estadisticasController);
+            var notificacionesController = new NotificacionesController(InformationService, insigniasController, estadisticasController);
+            var notificacionesView = new NotificacionesView(notificacionesController);
+            notificacionesView.ShowDialog();
+        }
+
         private void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
             Close();

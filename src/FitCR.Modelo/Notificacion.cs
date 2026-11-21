@@ -6,14 +6,18 @@
     public class Notificacion
     {
         /// <summary>
-        /// Identificador de la notificacion.
+        /// Crea una notificacion con su mensaje. La fecha es el momento en que se genera.
         /// </summary>
-        public string Id { get; set; } = string.Empty;
+        public Notificacion(string mensaje)
+        {
+            Mensaje = mensaje;
+            Fecha = DateTime.Now;
+        }
 
         /// <summary>
         /// Texto de la notificacion.
         /// </summary>
-        public string Mensaje { get; set; } = string.Empty;
+        public string Mensaje { get; set; }
 
         /// <summary>
         /// Fecha en que se genero la notificacion.
