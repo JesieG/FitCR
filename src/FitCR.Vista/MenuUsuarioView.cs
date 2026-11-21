@@ -45,7 +45,9 @@ namespace FitCR.Vista
         private void BtnEstadisticas_Click(object sender, EventArgs e)
         {
             var estadisticasController = new EstadisticasController(InformationService);
-            var estadisticasView = new EstadisticasView(estadisticasController);
+            var aumentosController = new AumentosController(InformationService);
+            var objetivosController = new ObjetivosController(InformationService, estadisticasController);
+            var estadisticasView = new EstadisticasView(estadisticasController, aumentosController, objetivosController);
             estadisticasView.ShowDialog();
         }
 
