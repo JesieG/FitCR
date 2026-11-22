@@ -54,8 +54,5 @@ Entrenador:
 - Rutinas: agregar, editar y eliminar.
 - Registro de mediciones.
 - Notificaciones: rutinas por vencer y mediciones cercanas.
-
-## Pendiente para la siguiente iteracion
-
-- Aviso de nueva rutina en las notificaciones del usuario.
 - Registro de visitas desde la aplicacion.
+

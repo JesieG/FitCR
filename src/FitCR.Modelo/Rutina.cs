@@ -10,12 +10,13 @@ namespace FitCR.Modelo
         /// <summary>
         /// Crea una rutina a partir de los textos de una linea del CSV.
         /// </summary>
-        public Rutina(string id, string nombre, string idUsuario, string fechaVigencia)
+        public Rutina(string id, string nombre, string idUsuario, string fechaVigencia, string fechaAsignacion)
         {
             Id = id;
             Nombre = nombre;
             IdUsuario = idUsuario;
             FechaVigencia = DateTime.Parse(fechaVigencia, CultureInfo.InvariantCulture);
+            FechaAsignacion = DateTime.Parse(fechaAsignacion, CultureInfo.InvariantCulture);
         }
 
         /// <summary>
@@ -39,11 +40,18 @@ namespace FitCR.Modelo
         public DateTime FechaVigencia { get; set; }
 
         /// <summary>
+        /// Fecha en que el entrenador le asigno la rutina al usuario.
+        /// </summary>
+        public DateTime FechaAsignacion { get; set; }
+
+        /// <summary>
         /// Convierte la rutina en una linea del CSV.
         /// </summary>
         public override string ToString()
         {
-            return Id + "," + Nombre + "," + IdUsuario + "," + FechaVigencia.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+            return Id + "," + Nombre + "," + IdUsuario + "," +
+                   FechaVigencia.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture) + "," +
+                   FechaAsignacion.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
         }
     }
 }

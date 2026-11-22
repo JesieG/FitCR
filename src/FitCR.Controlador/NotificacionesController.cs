@@ -13,6 +13,9 @@ namespace FitCR.Controlador
         // Dias de anticipacion con los que se avisa que una rutina vence o que toca una medicion.
         private const int DiasDeAviso = 7;
 
+        // Dias durante los que una rutina asignada se considera nueva.
+        private const int DiasDeRutinaNueva = 7;
+
         // Cada cuantos dias se hace una medicion.
         private const int DiasEntreMediciones = 30;
 
@@ -62,10 +65,12 @@ namespace FitCR.Controlador
             return new List<Notificacion>();
         }
 
-        // Avisos del usuario: descanso, insignias ganadas e insignias de la verguenza.
+        // Avisos del usuario: rutinas nuevas, descanso, insignias ganadas e insignias de la verguenza.
         private List<Notificacion> ObtenerNotificacionesDeUsuario(Usuario usuario)
         {
             var notificaciones = new List<Notificacion>();
+
+            AgregarRutinasNuevas(notificaciones, usuario);
 
             var visitasDeLaSemana = EstadisticasController.ContarVisitas(usuario, ObtenerInicioDeSemana(), DateTime.Today);
             if (visitasDeLaSemana >= VisitasParaDescansar)
@@ -86,6 +91,21 @@ namespace FitCR.Controlador
             }
 
             return notificaciones;
+        }
+
+        // Una notificacion por cada rutina que el entrenador le asigno al usuario en los ultimos dias.
+        private void AgregarRutinasNuevas(List<Notificacion> notificaciones, Usuario usuario)
+        {
+            var desde = DateTime.Today.AddDays(-DiasDeRutinaNueva);
+
+            foreach (var rutina in InformationService.Rutinas)
+            {
+                if (rutina.IdUsuario == usuario.Id && rutina.FechaAsignacion.Date >= desde)
+                {
+                    notificaciones.Add(new Notificacion(
+                        $"Nueva rutina agregada: {rutina.Nombre}, vigente hasta el {rutina.FechaVigencia:dd/MM/yyyy}."));
+                }
+            }
         }
 
         // Avisos del entrenador: rutinas por vencer y mediciones cercanas.

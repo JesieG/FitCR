@@ -33,8 +33,9 @@ namespace FitCR.Controlador
             }
 
             var nuevoId = CalcularNuevoId();
-            var fecha = vigencia.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
-            var rutina = new Rutina(nuevoId.ToString(), nombre, usuario.Id, fecha);
+            var fechaVigencia = vigencia.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+            var fechaAsignacion = DateTime.Today.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+            var rutina = new Rutina(nuevoId.ToString(), nombre, usuario.Id, fechaVigencia, fechaAsignacion);
 
             InformationService.Rutinas.Add(rutina);
             usuario.Rutinas.Add(nuevoId);
@@ -155,7 +156,7 @@ namespace FitCR.Controlador
             return mayor + 1;
         }
 
-        // La rutina pasa a ser solo del nuevo usuario: se le quita a quien la tenga y se le da a el.
+        // La rutina pasa a ser solo del nuevo usuario: se le quita a quien la tenga, se le da a el y se anota la fecha de hoy.
         private void CambiarUsuario(Rutina rutina, Usuario nuevoUsuario)
         {
             if (int.TryParse(rutina.Id, out int idRutina))
@@ -165,6 +166,7 @@ namespace FitCR.Controlador
             }
 
             rutina.IdUsuario = nuevoUsuario.Id;
+            rutina.FechaAsignacion = DateTime.Today;
         }
 
         // Quita la rutina de la lista de todos los usuarios que la tengan.
