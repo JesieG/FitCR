@@ -31,5 +31,13 @@ namespace FitCR.Modelo
         /// Fecha de la visita.
         /// </summary>
         public DateTime Fecha { get; set; }
+
+        /// <summary>
+        /// Convierte la visita en una linea del CSV.
+        /// </summary>
+        public override string ToString()
+        {
+            return Id + "," + IdUsuario + "," + Fecha.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture);
+        }
     }
 }

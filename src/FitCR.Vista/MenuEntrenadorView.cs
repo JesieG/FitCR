@@ -44,6 +44,14 @@ namespace FitCR.Vista
             medicionesView.ShowDialog();
         }
 
+        private void BtnVisitas_Click(object sender, EventArgs e)
+        {
+            var visitasController = new VisitasController(InformationService);
+            var historialController = new HistorialController(InformationService);
+            var visitasView = new VisitasView(visitasController, historialController);
+            visitasView.ShowDialog();
+        }
+
         private void BtnNotificaciones_Click(object sender, EventArgs e)
         {
             var estadisticasController = new EstadisticasController(InformationService);

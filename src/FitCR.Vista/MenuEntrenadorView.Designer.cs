@@ -34,6 +34,7 @@
             LblTipo = new Label();
             BtnRutinas = new Button();
             BtnMediciones = new Button();
+            BtnVisitas = new Button();
             BtnNotificaciones = new Button();
             BtnCerrarSesion = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -88,7 +89,7 @@
             // 
             BtnMediciones.BackColor = Color.Lime;
             BtnMediciones.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnMediciones.Location = new Point(468, 462);
+            BtnMediciones.Location = new Point(468, 455);
             BtnMediciones.Margin = new Padding(4, 5, 4, 5);
             BtnMediciones.Name = "BtnMediciones";
             BtnMediciones.Size = new Size(423, 54);
@@ -97,11 +98,24 @@
             BtnMediciones.UseVisualStyleBackColor = false;
             BtnMediciones.Click += BtnMediciones_Click;
             // 
+            // BtnVisitas
+            // 
+            BtnVisitas.BackColor = Color.Lime;
+            BtnVisitas.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnVisitas.Location = new Point(468, 520);
+            BtnVisitas.Margin = new Padding(4, 5, 4, 5);
+            BtnVisitas.Name = "BtnVisitas";
+            BtnVisitas.Size = new Size(423, 54);
+            BtnVisitas.TabIndex = 20;
+            BtnVisitas.Text = "Visitas";
+            BtnVisitas.UseVisualStyleBackColor = false;
+            BtnVisitas.Click += BtnVisitas_Click;
+            // 
             // BtnNotificaciones
             // 
             BtnNotificaciones.BackColor = Color.Lime;
             BtnNotificaciones.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnNotificaciones.Location = new Point(468, 534);
+            BtnNotificaciones.Location = new Point(468, 585);
             BtnNotificaciones.Margin = new Padding(4, 5, 4, 5);
             BtnNotificaciones.Name = "BtnNotificaciones";
             BtnNotificaciones.Size = new Size(423, 54);
@@ -114,7 +128,7 @@
             // 
             BtnCerrarSesion.BackColor = Color.Lime;
             BtnCerrarSesion.Font = new Font("Lucida Bright", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            BtnCerrarSesion.Location = new Point(468, 606);
+            BtnCerrarSesion.Location = new Point(468, 650);
             BtnCerrarSesion.Margin = new Padding(4, 5, 4, 5);
             BtnCerrarSesion.Name = "BtnCerrarSesion";
             BtnCerrarSesion.Size = new Size(423, 54);
@@ -131,6 +145,7 @@
             ClientSize = new Size(1356, 750);
             Controls.Add(BtnCerrarSesion);
             Controls.Add(BtnNotificaciones);
+            Controls.Add(BtnVisitas);
             Controls.Add(BtnMediciones);
             Controls.Add(BtnRutinas);
             Controls.Add(LblTipo);
@@ -150,6 +165,7 @@
         private Label LblTipo;
         private Button BtnRutinas;
         private Button BtnMediciones;
+        private Button BtnVisitas;
         private Button BtnNotificaciones;
         private Button BtnCerrarSesion;
     }
