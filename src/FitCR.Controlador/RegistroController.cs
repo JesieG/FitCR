@@ -38,45 +38,66 @@ namespace FitCR.Controlador
                 return false;
             }
 
+            // El peso y la estatura se pueden escribir con coma o con punto.
+            var pesoLimpio = NormalizarDecimal(peso);
+            var estaturaLimpia = NormalizarDecimal(estatura);
+
             // Edad, peso y estatura tienen que ser numeros mayores que cero.
             if (!int.TryParse(edad, out int edadNumero) || edadNumero <= 0)
             {
                 return false;
             }
 
-            if (!double.TryParse(peso, NumberStyles.Float, CultureInfo.InvariantCulture, out double pesoNumero) || pesoNumero <= 0)
+            if (!double.TryParse(pesoLimpio, NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, out double pesoNumero) || pesoNumero <= 0)
             {
                 return false;
             }
 
-            if (!double.TryParse(estatura, NumberStyles.Float, CultureInfo.InvariantCulture, out double estaturaNumero) || estaturaNumero <= 0)
+            if (!double.TryParse(estaturaLimpia, NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture, out double estaturaNumero) || estaturaNumero <= 0)
             {
                 return false;
             }
 
             // El nombre de usuario no puede repetirse, ni entre usuarios ni entre entrenadores.
+            if (ExisteNombreDeUsuario(usuario))
+            {
+                return false;
+            }
+
+            // El nuevo id es la cantidad de usuarios que ya hay. Empieza sin rutinas.
+            var nuevoId = InformationService.Usuarios.Count.ToString();
+            var nuevo = new Usuario(nuevoId, nombre, usuario, contrasena, edad, pesoLimpio, estaturaLimpia, "{}");
+            InformationService.Usuarios.Add(nuevo);
+
+            return InformationService.UsuarioDataHandler.SaveData(Configuracion.RutaUsuarios, InformationService.Usuarios);
+        }
+
+        // Cambia la coma por punto y quita los espacios de los extremos.
+        private static string NormalizarDecimal(string texto)
+        {
+            return texto.Trim().Replace(',', '.');
+        }
+
+        // Revisa si el nombre de usuario ya lo tiene un usuario o un entrenador.
+        private bool ExisteNombreDeUsuario(string nombreUsuario)
+        {
             foreach (var existente in InformationService.Usuarios)
             {
-                if (existente.NombreUsuario == usuario)
+                if (existente.NombreUsuario == nombreUsuario)
                 {
-                    return false;
+                    return true;
                 }
             }
 
             foreach (var existente in InformationService.Entrenadores)
             {
-                if (existente.NombreUsuario == usuario)
+                if (existente.NombreUsuario == nombreUsuario)
                 {
-                    return false;
+                    return true;
                 }
             }
 
-            // El nuevo id es la cantidad de usuarios que ya hay. Empieza sin rutinas.
-            var nuevoId = InformationService.Usuarios.Count.ToString();
-            var nuevo = new Usuario(nuevoId, nombre, usuario, contrasena, edad, peso, estatura, "{}");
-            InformationService.Usuarios.Add(nuevo);
-
-            return InformationService.UsuarioDataHandler.SaveData(Configuracion.RutaUsuarios, InformationService.Usuarios);
+            return false;
         }
     }
 }

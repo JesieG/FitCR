@@ -10,13 +10,31 @@ namespace FitCR.Vista
     internal static class Program
     {
         /// <summary>
-        /// Arma las piezas en orden y abre la ventana de login.
+        /// Arma las piezas y abre la ventana de login. Si un archivo de datos falla, avisa y no abre.
         /// </summary>
         [STAThread]
         static void Main()
         {
             ApplicationConfiguration.Initialize();
 
+            LoginView loginView;
+
+            try
+            {
+                loginView = ArmarLogin();
+            }
+            catch (Exception ex) when (ex is IOException || ex is InvalidDataException)
+            {
+                MessageBox.Show(ex.Message, "No se pudo abrir Fit.CR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Application.Run(loginView);
+        }
+
+        // Arma las piezas en orden: lectores, servicio, controladores y ventana de login.
+        private static LoginView ArmarLogin()
+        {
             IDataHandler<Usuario> usuarioHandler = new FileHandler<Usuario>();
             IDataHandler<Entrenador> entrenadorHandler = new FileHandler<Entrenador>();
             IDataHandler<Rutina> rutinaHandler = new FileHandler<Rutina>();
@@ -37,9 +55,8 @@ namespace FitCR.Vista
                 aumentoHandler);
             var loginController = new LoginController(informationService);
             var registroController = new RegistroController(informationService);
-            var loginView = new LoginView(loginController, registroController);
 
-            Application.Run(loginView);
+            return new LoginView(loginController, registroController);
         }
     }
 }
