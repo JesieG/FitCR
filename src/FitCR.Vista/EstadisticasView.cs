@@ -33,6 +33,7 @@ namespace FitCR.Vista
             ConfigurarTabla(GrdTopAusentes);
             ConfigurarTabla(GrdAumentos);
             ConfigurarTabla(GrdObjetivos);
+            GrdObjetivos.Columns[0].FillWeight = 180;
             CargarEstadisticas();
         }
 

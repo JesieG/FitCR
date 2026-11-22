@@ -27,7 +27,7 @@ namespace FitCR.Controlador
         /// Revisa que la fecha inicial no sea mayor que la final.
         /// </summary>
         /// <returns>True si el rango es valido, false si no.</returns>
-        public bool RangoValido(DateTime desde, DateTime hasta)
+        public static bool RangoValido(DateTime desde, DateTime hasta)
         {
             return desde.Date <= hasta.Date;
         }

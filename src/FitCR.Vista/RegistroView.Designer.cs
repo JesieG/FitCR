@@ -57,7 +57,6 @@
             this.label1.Size = new System.Drawing.Size(144, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Crear Cuenta";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -80,7 +79,6 @@
             this.label2.Size = new System.Drawing.Size(135, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre Completo";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // TxtNombre
             // 
@@ -100,7 +98,6 @@
             this.label3.Size = new System.Drawing.Size(61, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Usuario";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // TxtUsuario
             // 
@@ -221,7 +218,6 @@
             this.Controls.Add(this.label1);
             this.Name = "RegistroView";
             this.Text = "RegistroView";
-            this.Load += new System.EventHandler(this.RegistroView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

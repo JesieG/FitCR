@@ -86,6 +86,7 @@ namespace FitCR.Vista
             GrdAumentos.Columns.Add("Ejercicio", "Ejercicio");
             GrdAumentos.Columns.Add("Peso", "Peso (kg)");
             GrdAumentos.Columns.Add("Aumento", "Aumento (kg)");
+            GrdAumentos.Columns[1].FillWeight = 180;
 
             foreach (var registro in AumentosController.ObtenerAumentos(usuario))
             {
