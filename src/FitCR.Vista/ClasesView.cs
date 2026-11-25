@@ -38,7 +38,7 @@ namespace FitCR.Vista
             }
         }
 
-        // Las columnas se reparten todo el ancho y se oculta la columna vacia de la izquierda.
+        // Las columnas se reparten el ancho completo y se oculta la columna vacia de la izquierda.
         private void ConfigurarTabla()
         {
             GrdClases.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

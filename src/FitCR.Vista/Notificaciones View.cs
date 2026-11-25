@@ -42,7 +42,7 @@ namespace FitCR.Vista
             LblResumen.Text = $"Total de notificaciones: {notificaciones.Count}";
         }
 
-        // La columna ocupa todo el ancho, los textos largos pasan a la linea de abajo y se oculta la columna vacia de la izquierda.
+        // La columna ocupa el ancho completo, los textos largos pasan a la linea de abajo y se oculta la columna vacia de la izquierda.
         private void ConfigurarTabla()
         {
             GrdNotificaciones.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

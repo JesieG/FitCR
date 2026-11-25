@@ -33,7 +33,6 @@ namespace FitCR.Vista
             ConfigurarTabla(GrdTopAusentes);
             ConfigurarTabla(GrdAumentos);
             ConfigurarTabla(GrdObjetivos);
-            GrdObjetivos.Columns[0].FillWeight = 180;
             CargarEstadisticas();
         }
 
@@ -114,6 +113,9 @@ namespace FitCR.Vista
             GrdObjetivos.Columns.Add("Cambio", "Cambio");
             GrdObjetivos.Columns.Add("Estado", "Estado");
 
+            // La primera columna lleva mas ancho para que no se corte el nombre de la meta.
+            GrdObjetivos.Columns[0].FillWeight = 180;
+
             var progresos = ObjetivosController.ObtenerProgreso(usuario, desde, hasta);
 
             foreach (var progreso in progresos)
@@ -160,7 +162,7 @@ namespace FitCR.Vista
             return cambio.Value.ToString("0.0");
         }
 
-        // Las columnas se reparten todo el ancho y se oculta la columna vacia de la izquierda.
+        // Las columnas se reparten el ancho completo y se oculta la columna vacia de la izquierda.
         private static void ConfigurarTabla(DataGridView tabla)
         {
             tabla.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

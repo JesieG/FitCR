@@ -71,7 +71,7 @@ namespace FitCR.Vista
             }
         }
 
-        // La columna ocupa todo el ancho y se oculta la columna vacia de la izquierda.
+        // La columna ocupa el ancho completo y se oculta la columna vacia de la izquierda.
         private void ConfigurarTabla()
         {
             GrdVisitas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

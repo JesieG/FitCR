@@ -114,7 +114,7 @@ namespace FitCR.Vista
             return aumento.Value.ToString("0.0");
         }
 
-        // Las columnas se reparten todo el ancho y se oculta la columna vacia de la izquierda.
+        // Las columnas se reparten el ancho completo y se oculta la columna vacia de la izquierda.
         private static void ConfigurarTabla(DataGridView tabla)
         {
             tabla.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
